@@ -234,20 +234,21 @@ footer {
 }
 .footer-social {
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 
 .burger {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: 11.5px;
   cursor: pointer;
 }
 
 .burger span {
-  width: 24px;
+  width: 30px;
   height: 2px;
-  background: #000;
+  background: #000000;
 }
 
 @media (max-width: 1200px) {
@@ -299,11 +300,8 @@ footer {
     max-width: 640px;
     margin: 0 auto;
   }
-  header,
-  main,
-  footer {
-    padding-left: 0;
-    padding-right: 0;
+  * {
+    padding: 0px;
   }
   header {
     padding-left: 20px;
@@ -348,6 +346,69 @@ footer {
   .footer-author-social {
     flex-direction: column-reverse;
     gap: 30px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 320px) {
+
+  header {
+    padding-left: 20px;
+    padding-right: 36px;
+  }
+  .main-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main-image {
+    width: 100%;
+    height: 100%;
+    max-height: 217px;
+  }
+  .main-content-title {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .contact-button {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+  }
+  .footer-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logos :nth-child(1) {
+    max-width: 96px;
+  }
+  .footer-logos :nth-child(2) {
+    max-width: 50px;
+  }
+  .footer-logos :nth-child(3) {
+    max-width: 136px;
+  }
+  .footer-nav {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .footer-button {
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    font-size: 14px;
+  }
+  .footer-line {
+    display: none;
+  }
+  .footer-social {
+    margin-right: 40px;
+  }
+  .footer-author {
+    flex-direction: column;
     align-items: center;
   }
 }
