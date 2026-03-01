@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  font-style: normal;
 }
 html, body {
   overflow-x: hidden;
@@ -40,23 +41,27 @@ header {
 }
 .header-nav {
   display: flex;
-  gap: 20px;
+  gap: 48px;
   list-style: none;
 }
 .header-nav li {
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 150%;
   text-transform: uppercase;
 }
-.header-nav a.active {
+.header-nav a.active, .header-nav a:hover {
   color: #00A092;
+  transition: color 0.3s ease;
 }
 .header-social {
   margin-left: 65px;
   display: flex;
   gap: 30px;
+}
+.header-social img:hover {
+  scale: 1.2;
+  transition: scale 0.3s ease;
 }
 .burger {
   display: none;
@@ -70,7 +75,6 @@ header {
   height: 2px;
   background: #000000;
 }
-
 
 /* Main */
 .main-content {
@@ -115,9 +119,10 @@ header {
   position: absolute;
   width: clamp(32px, 6vw, 100px);
   aspect-ratio: 100 / 144;
-  background: url("../../assets/map/location\ default.svg") no-repeat center/contain;
+  background: url("../../assets/map/location-default.svg") no-repeat center/contain;
   cursor: pointer;
   transition: 0.3s ease;
+  pointer-events: auto;
 }
 .pin img {
   position: absolute;
@@ -130,11 +135,9 @@ header {
   object-fit: contain;
 }
 .pin:hover {
-  background: url("../../assets/map/location\ active\ inside.svg") no-repeat center/contain;
+  background: url("../../assets/map/location-active-inside.svg") no-repeat center/contain;
 }
-.pin:hover::before {
-  opacity: 1;
-}
+
 .eagle-svg {
   left: 11.77%;
   top: 42.88%;

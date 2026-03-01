@@ -3,16 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  font-style: normal;
 }
 html, body {
   overflow-x: hidden;
 }
-button, a {
-  cursor: pointer;
-}
 :root {
   scroll-behavior: smooth;
   font-size: 18px;
+}
+button, a {
+  cursor: pointer;
 }
 .container {
   width: 100%;
@@ -40,23 +41,39 @@ header {
 }
 .header-nav {
   display: flex;
-  gap: 20px;
+  gap: 48px;
   list-style: none;
 }
 .header-nav li {
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 150%;
   text-transform: uppercase;
 }
-.header-nav a.active {
+.header-nav a.active, .header-nav a:hover {
   color: #00A092;
+  transition: color 0.3s ease;
 }
 .header-social {
   margin-left: 65px;
   display: flex;
   gap: 30px;
+}
+.header-social img:hover {
+  scale: 1.2;
+  transition: scale 0.3s ease;
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 11.5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 30px;
+  height: 2px;
+  background: #000000;
 }
 main {
   padding-left: min(260px, 13.55%);
