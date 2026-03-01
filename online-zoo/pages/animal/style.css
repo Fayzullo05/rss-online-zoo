@@ -864,3 +864,461 @@ footer {
   scale: 1.2;
   transition: scale 0.3s ease;
 }
+
+@media (max-width: 1200px) {
+  header {
+    padding-left: 8.3%;
+    padding-right: 8.3%;
+  }
+  footer {
+    padding-left: 3.3%;
+    padding-right: 3.3%;
+  }
+
+  .sidebar.collapsed {
+    width: 170px;
+  }
+
+  .sidebar.expanded {
+    width: 260px;
+  }
+
+  .icon-wrapper-outer {
+    width: 90px;
+    height: 90px;
+  }
+
+  .icon-wrapper {
+    width: 76px;
+    height: 76px;
+  }
+
+  .player-section {
+    padding: 40px 40px 30px 30px;
+  }
+
+  .player-title {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .donate-button {
+    width: 190px;
+    padding: 18px 20px;
+    font-size: 15px;
+  }
+
+  .more-views-section {
+    padding: 30px 40px 80px;
+  }
+
+  .more-views-title {
+    font-size: 32px;
+  }
+
+  .cam-thumb {
+    width: auto;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .cam-label {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  .info-card {
+    padding: 40px;
+    margin-bottom: 80px;
+  }
+
+  .info-card h2 {
+    font-size: 32px;
+  }
+
+  .info-card p {
+    font-size: 20px;
+  }
+
+  .info-main {
+    grid-template-columns: 1fr 480px;
+    gap: 40px;
+  }
+
+  .info-details strong {
+    font-size: 20px;
+  }
+
+  .animal-info {
+    padding: 80px 40px;
+  }
+
+  .donation-text h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .donation-text p {
+    font-size: 16px;
+  }
+
+  .donation-action p {
+    font-size: 20px;
+  }
+
+  .footer-logos {
+    gap: 18px;
+  }
+
+  .footer-nav {
+    gap: 14px;
+    font-size: 14px;
+  }
+
+  .footer-button {
+    max-width: 280px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  .info-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 860px) {
+  header {
+    padding: 15px 20px;
+  }
+  .header-nav,
+  .header-social {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+  .footer-logo-nav {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  .footer-author-social {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  * {
+    padding: 0px;
+  }
+  header {
+    padding-left: 20px;
+    padding-right: 47px;
+  }
+  .header-nav, .header-social {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+  .footer-logo-nav {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  .footer-author-social {
+    flex-direction: column-reverse;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .live-cams-row {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 240px !important;
+    height: calc(100vh - 80px);
+    z-index: 900;
+    transition: left 0.3s ease, width 0.3s ease;
+    overflow-y: auto;
+  }
+
+  .sidebar.mobile-open {
+    left: 0;
+  }
+
+  .sidebar.collapsed .animal-text,
+  .sidebar.mobile-open .animal-text {
+    display: block;
+  }
+
+  .sidebar.collapsed .animal-item,
+  .sidebar.mobile-open .animal-item {
+    justify-content: flex-start;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  .live-badge {
+    position: static;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .player-section {
+    padding: 24px 16px 16px;
+  }
+
+  .player-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .player-title {
+    position: static;
+    transform: none;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .donate-button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .more-views-section {
+    padding: 20px 16px 40px;
+  }
+
+  .more-views-title {
+    font-size: 24px;
+  }
+
+  .cams-list {
+    gap: 12px;
+  }
+
+  .cam-label {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  .arrow-button img {
+    width: 16px;
+  }
+
+  .animal-info {
+    padding: 40px 16px;
+  }
+
+  .info-card {
+    padding: 24px 20px;
+    margin-bottom: 40px;
+  }
+
+  .info-card h2 {
+    font-size: 24px;
+  }
+
+  .info-card p {
+    font-size: 16px;
+  }
+
+  .info-main {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .info-image {
+    order: -1;
+  }
+
+  .info-details strong {
+    font-size: 18px;
+  }
+
+  .info-details ul {
+    gap: 16px;
+  }
+
+  .info-details button {
+    padding: 14px 20px;
+  }
+
+  .main-donation {
+    padding: 40px 20px;
+  }
+
+  .donation-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .donation-text h2 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .donation-action {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .donation-button {
+    max-width: 100%;
+    height: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    padding-left: 20px;
+    padding-right: 36px;
+  }
+  .footer-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logos :nth-child(1) {
+    max-width: 96px;
+  }
+  .footer-logos :nth-child(2) {
+    max-width: 50px;
+  }
+  .footer-logos :nth-child(3) {
+    max-width: 136px;
+  }
+  .footer-nav {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .footer-button {
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    font-size: 14px;
+  }
+  .footer-line {
+    display: none;
+  }
+  .footer-social {
+    margin-right: 40px;
+  }
+  .footer-author {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player-section {
+    padding: 16px 12px;
+  }
+
+  .player-title {
+    font-size: 22px;
+  }
+
+  .more-views-section {
+    padding: 16px 12px 30px;
+  }
+
+  .more-views-title {
+    font-size: 18px;
+  }
+
+  .cams-list {
+    gap: 8px;
+  }
+
+  .cam-label {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+
+  .play-button-small img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .views-wrapper {
+    gap: 8px;
+  }
+
+  .animal-info {
+    padding: 24px 12px;
+  }
+
+  .info-card {
+    padding: 16px 12px;
+    margin-bottom: 24px;
+  }
+
+  .info-card h2 {
+    font-size: 18px;
+  }
+
+  .info-card p {
+    font-size: 14px;
+  }
+
+  .info-details ul {
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  .info-details strong {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+
+  .info-details button {
+    display: block;
+    padding: 10px 12px;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .main-donation {
+    padding: 24px 12px;
+  }
+
+  .donation-text h2 {
+    font-size: 20px;
+  }
+
+  .donation-text p {
+    font-size: 14px;
+  }
+
+  .donation-action p {
+    font-size: 16px;
+  }
+
+  .donation-button {
+    height: 52px;
+    font-size: 14px;
+  }
+}
