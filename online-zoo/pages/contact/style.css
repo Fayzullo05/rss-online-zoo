@@ -298,6 +298,30 @@ footer {
     align-self: flex-start;
   }
 }
+
+@media (max-width: 860px) {
+  header {
+    padding: 15px 20px;
+  }
+  .header-nav,
+  .header-social {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+  .footer-logo-nav {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  .footer-author-social {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+}
+
 @media (max-width: 640px) {
   .container {
     max-width: 640px;
