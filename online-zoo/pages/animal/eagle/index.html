@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online-zoo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../../assets/contact/Favicon.svg" type="image/svg+xml">
+</head>
+
+<body class="eagle-page">
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="../../../assets/contact/Logo.svg" alt="Online-zoo logo">
+      </div>
+      <nav>
+        <ul class="header-nav">
+          <li><a href="../../landing/index.html">About</a></li>
+          <li><a href="../../map/index.html">Map</a></li>
+          <li><a href="../index.html" class="active">Zoos</a></li>
+          <li><a href="../../contact/index.html">Contact us</a></li>
+          <li><a href="../../contact/index.html">Design</a></li>
+        </ul>
+      </nav>
+      <div class="header-social">
+        <a href="https://www.youtube.com"><img src="../../../assets/contact/YouTube.svg" alt="YouTube"></a>
+        <a href="https://www.instagram.com"><img src="../../../assets/contact/Instagram.svg" alt="Instagram"></a>
+        <a href="https://www.facebook.com"><img src="../../../assets/contact/Facebook.svg" alt="Facebook"></a>
+      </div>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <main class="layout">
+      <div class="live-cams-row">
+        <aside class="sidebar collapsed" id="sidebar">
+          <div class="live-badge">
+            <span>live</span>
+            <img src="../../../assets/animal/Vector.svg" alt="Live icon">
+          </div>
+          <button class="toggle-button" id="toggleButton">
+            <img src="../../../assets/animal/right icon sidebar.svg" alt="">
+          </button>
+          <ul class="animal-list">
+            <li class="animal-item" data-animal="eagle">
+              <div class="icon-wrapper-outer">
+                <div class="icon-wrapper">
+                  <a href="./index.html"><img src="../../../assets/animal/Eagle.svg" alt="Eagle icon"></a>
+                </div>
+              </div>
+              <span class="animal-text">
+                Watch The Bald Eagles Nest from West End cam
+              </span>
+            </li>
+
+            <li class="animal-item" data-animal="gorilla">
+              <div class="icon-wrapper-outer">
+                <div class="icon-wrapper">
+                  <a href="../gorilla/index.html"><img src="../../../assets/animal/Gorilla.svg" alt="Gorilla icon"></a>
+                </div>
+              </div>
+              <span class="animal-text">
+                Livestream from Gorilla Forest Corridor habitat cam
+              </span>
+            </li>
+
+            <li class="animal-item" data-animal="lemur">
+              <div class="icon-wrapper-outer">
+                <div class="icon-wrapper">
+                  <a href="../lemur/index.html"><img src="../../../assets/animal/Lemur.svg" alt="Lemur icon"></a>
+                </div>
+              </div>
+              <span class="animal-text">
+                The ring-tailed lemurs play in Madagascar, Lemuria Land
+              </span>
+            </li>
+            <li class="animal-item" data-animal="panda">
+              <div class="icon-wrapper-outer">
+                <div class="icon-wrapper">
+                  <a href="../index.html"><img src="../../../assets/animal/Panda.svg" alt="Panda icon"></a>
+                </div>
+              </div>
+              <span class="animal-text">
+                Watch live from China's Panda Center
+              </span>
+            </li>
+            <li class="animal-item">
+              <span class="animal-text">
+                And more...
+            </li>
+          </ul>
+        </aside>
+        <div class="content">
+          <section class="main-content">
+            <div class="player-section">
+              <div class="player-header">
+                <h1 class="player-title">Bald Eagle cams</h1>
+                <button class="donate-button">Donate Now <img src="../../../assets/contact/button-arrow.svg"
+                    alt="arrow"></button>
+              </div>
+              <div class="video-player eagle-background">
+                <div class="video-label">Sam & Lora, the Bald Eagles cam 1</div>
+                <div class="video-area">
+                  <button class="play-button-main">
+                    <img src="../../../assets/animal/play button.svg" alt="Play button" class="play-button-default">
+                    <img src="../../../assets/animal/play button(1).svg" alt="Play button" class="play-button-active">
+                  </button>
+                  <div class="video-logo">
+                    <img src="../../../assets/contact/Logo white.svg" alt="Online Zoo">
+                  </div>
+                  <span class="video-line"></span>
+                  <div class="video-controls">
+                    <div class="controls-left">
+                      <button class="control-button"><img src="../../../assets/animal/player/ico-play.svg"
+                          alt="Play"></button>
+                      <button class="control-button"><img src="../../../assets/animal/player/ico-next.svg"
+                          alt="Next"></button>
+                      <button class="control-button"><img src="../../../assets/animal/player/ico-sound.svg"
+                          alt="Volume"></button>
+                      <span class="live-label">&#8226; <b>live</b></span>
+                    </div>
+                    <div class="controls-right">
+                      <button class="control-button"><img src="../../../assets/animal/player/ico-titles.svg"
+                          alt="Titles"></button>
+                      <button class="control-button"><img src="../../../assets/animal/player/ico-hd.svg"
+                          alt="HD"></button>
+                      <button class="control-button"><img src="../../../assets/animal/player/ico-theater.svg"
+                          alt="Theater"></button>
+                      <button class="control-button"><img src="../../../assets/animal/player/ico-tv.svg"
+                          alt="TV"></button>
+                      <button class="control-button"><img src="../../../assets/animal/player/ico-fullscreen.svg"
+                          alt="Fullscreen"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="more-views-section">
+              <h2 class="more-views-title">More live views</h2>
+              <div class="views-wrapper">
+                <button class="arrow-button left-arrow">
+                  <img src="../../../assets/animal/arrow black.svg" alt="Previous" style="transform: rotate(180deg);">
+                </button>
+                <div class="cams-list">
+                  <div class="cam-card active">
+                    <div class="cam-thumb">
+                      <img src="../../../assets/animal/eagle/eagle cam1.svg" alt="Cam 1">
+                      <div class="cam-label">Cam 1 <img src="../../../assets/animal/Vector.svg" alt="Live icon"></div>
+                      <button class="play-button-small"><img src="../../../assets/animal/play button.svg"
+                          alt="Play"></button>
+                    </div>
+                  </div>
+                  <div class="cam-card">
+                    <div class="cam-thumb">
+                      <img src="../../../assets/animal/eagle/eagle cam2.svg" alt="Cam 2">
+                      <div class="cam-label">Cam 2 <img src="../../../assets/animal/Vector.svg" alt="Live icon"></div>
+                      <button class="play-button-small"><img src="../../../assets/animal/play button.svg"
+                          alt="Play"></button>
+                    </div>
+                  </div>
+                  <div class="cam-card">
+                    <div class="cam-thumb">
+                      <img src="../../../assets/animal/eagle/eagle cam3.svg" alt="Cam 3">
+                      <div class="cam-label">Cam 3 <img src="../../../assets/animal/Vector.svg" alt="Live icon"></div>
+                      <button class="play-button-small"><img src="../../../assets/animal/play button.svg"
+                          alt="Play"></button>
+                    </div>
+                  </div>
+                </div>
+                <button class="arrow-button right-arrow">
+                  <img src="../../../assets/animal/arrow black.svg" alt="Next">
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section class="main-donation">
+        <div class="donation-content">
+          <div class="donation-text">
+            <h2>Keep the Bald Eagle cams Streaming!</h2>
+            <p>Because of its role as a symbol of the US, but also because of its 
+              being a large predator, the bald eagle has many representations in popular 
+              culture. Not all of these representations are accurate. In particular, 
+              the movie or television bald eagle typically has a bold, powerful cry. 
+              The actual eagle has a much softer, chirpy voice, not in keeping with its popular image.
+            </p>
+          </div>
+          <div class="donation-action">
+            <p>Quick Donate</p>
+            <button class="donation-button">
+              <span class="donation-text-part">$ Donation amount</span>
+              <span class="donation-arrow">
+                <img src="../../../assets/contact/button-arrow.svg" alt="Arrow">
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="animal-info">
+        <div class="info-card">
+          <h2>Did you know?</h2>
+          <p>
+            Bald eagles are known for their impressive size and distinctive white head and tail feathers.
+            They are powerful birds of prey that primarily feed on fish, which they catch with their sharp talons.
+            These majestic birds are often seen soaring high above rivers and lakes, scanning for their next meal.
+          </p>
+        </div>
+
+        <div class="info-main">
+          <div class="info-details">
+            <ul>
+              <li><strong>Common name:</strong> Bald Eagle</li>
+              <li><strong>Scientific name:</strong> Haliaeetus leucocephalus</li>
+              <li><strong>Type:</strong> Birds</li>
+              <li><strong>Size:</strong> Body: 34 to 43 inches; wingspan: 6 to 8 feet</li>
+              <li><strong>Diet:</strong> Carnivore</li>
+              <li><strong>Habitat:</strong> Seacoasts, rivers, large lakes or marshes</li>
+              <li><strong>Range:</strong> Continental United States
+                <button>
+                  <a href="../map/index.html" class="view-map">View Map
+                    <img src="../../../assets/animal/arrow orange.svg" alt="Arrow" class="info-arrow-default">
+                    <img src="../../../assets/animal/arrow white.svg" alt="Arrow" class="info-arrow-active">
+                  </a>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="info-image">
+            <img src="../../../assets/animal/eagle/info eagle.svg" alt="Eagle image">
+          </div>
+        </div>
+
+        <div class="info-description">
+          <p>
+            The bald eagle, with its snowy-feathered (not bald) head and white tail,
+            is the proud national bird symbol of the United States—yet the bird was
+            nearly wiped out there. For many decades, bald eagles were hunted for sport
+            and for the "protection" of fishing grounds. These powerful birds of prey
+            use their talons to fish, but they get many of their meals by scavenging carrion or stealing the kills of other
+            animals. They live near water and favor coasts and lakes where fish are plentiful, though they will also snare and eat
+            small mammals. Bald eagles are believed to mate for life. A pair constructs an enormous stick nest—one of the
+            bird-world's biggest—high above the ground and tends to a pair of eggs each year. Immature eagles are dark, and until
+            they are about five years old, they lack the distinctive white markings that make their parents so easy to identify.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo-nav">
+        <div class="footer-logos">
+          <img src="../../../assets/contact/Logo white.svg" alt="Online-zoo logo">
+          <img src="../../../assets/contact/Yem Digital.svg" alt="Yem Digital logo">
+          <img src="../../../assets/contact/rs_school_js logo.svg" alt="RS School logo">
+        </div>
+        <nav>
+          <ul class="footer-nav">
+            <li><a href="../../landing/index.html">About</a></li>
+            <li><a href="../../map/index.html">Map</a></li>
+            <li><a href="../../zoos/index.html">Zoos</a></li>
+            <li><a href="../../contact/index.html">Contact us</a></li>
+          </ul>
+        </nav>
+        <button class="footer-button">Donate for volunteers
+          <img src="../../../assets/contact/button-arrow.svg" alt="Arrow">
+        </button>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-author-social">
+        <div class="footer-author">
+          <span>© 2021 DinaK</span>
+          <span>© Yem Digital</span>
+          <span>RSSchool</span>
+        </div>
+        <div class="footer-social">
+          <span class="line-small-screen"></span>
+          <a href="https://www.youtube.com"><img src="../../../assets/contact/YouTube.svg" alt="YouTube"></a>
+          <a href="https://www.instagram.com"><img src="../../../assets/contact/Instagram.svg" alt="Instagram"></a>
+          <a href="https://www.facebook.com"><img src="../../../assets/contact/Facebook.svg" alt="Facebook"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../script.js"></script>
+</body>
+
+</html>

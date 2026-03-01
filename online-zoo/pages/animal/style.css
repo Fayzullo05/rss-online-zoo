@@ -310,6 +310,32 @@ header {
   background: linear-gradient(180.29deg, rgba(0, 0, 0, 0) 85.76%, #000000 99.75%),
     linear-gradient(152.16deg, #000000 2.73%, rgba(0, 0, 0, 0) 16.72%),
     url(../../assets/animal/Panda\ cam1.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.eagle-background {
+  background: linear-gradient(180.29deg, rgba(0, 0, 0, 0) 85.76%, #000000 99.75%),
+    linear-gradient(152.16deg, #000000 2.73%, rgba(0, 0, 0, 0) 16.72%),
+    url(../../assets/animal/eagle/eagle\ cam1.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gorilla-background {
+  background: linear-gradient(180.29deg, rgba(0, 0, 0, 0) 85.76%, #000000 99.75%),
+    linear-gradient(152.16deg, #000000 2.73%, rgba(0, 0, 0, 0) 16.72%),
+    url(../../assets/animal/gorilla/gorilla\ cam1.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.lemur-background {
+  background: linear-gradient(180.29deg, rgba(0, 0, 0, 0) 85.76%, #000000 99.75%),
+    linear-gradient(152.16deg, #000000 2.73%, rgba(0, 0, 0, 0) 16.72%),
+    url(../../assets/animal/lemur/lemur\ cam1.svg);
+    background-size: cover;
+    background-position: center;
 }
 
 .video-label {
