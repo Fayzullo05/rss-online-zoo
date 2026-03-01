@@ -74,15 +74,16 @@ header {
 
 /* Main */
 .main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 150px;
-    padding-left: 260px;
-    padding-right: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: min(150px, 7.81%);
+  padding-left: min(260px, 13.55%);
+  padding-right: min(260px, 13.55%);
 }
 .main-title {
+  max-width: 600px;
   font-style: normal;
   font-weight: 600;
   font-size: 54px;
@@ -90,40 +91,43 @@ header {
   text-align: center;
   text-transform: uppercase;
   color: #20113D;
-  flex-wrap: wrap;
 }
 .map {
   position: relative;
   width: 100%;
   max-width: 1406px;
   margin: 45px auto;
+  aspect-ratio: 1406 / 912;
 }
-.map img {
+.map > img {
   width: 100%;
   height: auto;
   display: block;
 }
 .map-pins {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 .pin {
   position: absolute;
-  width: 100px;
-  height: 144px;
+  width: clamp(32px, 6vw, 100px);
+  aspect-ratio: 100 / 144;
   background: url("../../assets/map/location\ default.svg") no-repeat center/contain;
   cursor: pointer;
   transition: 0.3s ease;
 }
 .pin img {
   position: absolute;
-  width: 58px;
-  top: 38%;
+  width: 58%;
+  height: auto;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: block;
+  object-fit: contain;
 }
 .pin:hover {
   background: url("../../assets/map/location\ active\ inside.svg") no-repeat center/contain;
@@ -132,49 +136,41 @@ header {
   opacity: 1;
 }
 .eagle-svg {
-  position: absolute;
   left: 11.77%;
   top: 42.88%;
   filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 .alligator-svg {
-  position: absolute;
   top: 43.63%;
   left: 20.56%;
   filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 .lion-svg {
-  position: absolute;
   left: 40.62%;
   top: 48.33%;
   filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 .gorilla-svg {
-	position: absolute;
 	left: 49.17%;
 	top: 50.65%;
 	filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 .lemur-svg {
-	position: absolute;
 	left: 56.13%;
 	top: 63.94%;
 	filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 .panda-svg {
-	position: absolute;
 	left: 67.71%;
 	top: 37.36%;
 	filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 .tiger-svg {
-	position: absolute;
 	left: 71.99%;
 	top: 54.43%;
 	filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 .koala-svg {
-	position: absolute;
 	left: 81.81%;
 	top: 67.97%;
 	filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
@@ -275,6 +271,9 @@ footer {
     padding-left: 3.3%;
     padding-right: 3.3%;
   }
+  .main-content {
+    padding: 30px 0 100px 0;
+  }
 }
 @media (max-width: 860px) {
   header {
@@ -326,6 +325,15 @@ footer {
     gap: 30px;
     align-items: center;
   }
+  .main-title {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 51px;
+  }
+  .pin {
+    max-width: 42px;
+    max-height: 60px;
+  }
 }
 @media (max-width: 320px) {
   header {
@@ -367,5 +375,11 @@ footer {
   .footer-author {
     flex-direction: column;
     align-items: center;
+  }
+
+  .main-title {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
   }
 }
