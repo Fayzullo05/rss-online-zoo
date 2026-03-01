@@ -15,6 +15,10 @@ body {
   font-size: 18px;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 .container {
   background-color: #ffffff;
 }
@@ -733,7 +737,7 @@ header {
 }
 
 .info-details button:hover {
-  background: #D26004;
+  background: #F58021;
   transition: background 0.3s ease;
 }
 

@@ -12,6 +12,9 @@ html, body {
   scroll-behavior: smooth;
   font-size: 18px;
 }
+button, a {
+  cursor: pointer;
+}
 .container {
   width: 100%;
   max-width: 1920px;
@@ -662,6 +665,18 @@ header {
   transform: rotate(180deg);
 }
 
+.feedback-arrows .arrow:hover {
+  border: none;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-arrows .arrow:hover .feedback-arrow {
+  background: url("../../assets/landing/arrow.svg") no-repeat center;
+  background-size: contain;
+  transition: background 0.3s ease;
+}
+
 /* section favorite */
 
 .favourite-container {
@@ -730,6 +745,9 @@ header {
 }
 .favourite-content .pet-link {
   margin-top: auto;
+  max-width: 142px;
+  align-self: center;
+  padding: 24px 28px;
 }
 .favourite-content p{
   font-weight: 400;

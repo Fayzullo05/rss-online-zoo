@@ -11,6 +11,9 @@ html, body {
   scroll-behavior: smooth;
   font-size: 18px;
 }
+button, a {
+  cursor: pointer;
+}
 .container {
   width: 100%;
   max-width: 1920px;
