@@ -325,7 +325,7 @@ header {
 .pets-grid {
   padding-left: min(260px, 13.55%);
   display: grid;
-  grid-template-columns: repeat(4, 460px);
+  grid-template-columns: repeat(4, min(460px, 100% / 2));
   gap: 40px;
 }
 .pet-card {
@@ -493,6 +493,7 @@ header {
   align-items: center;
 }
 .feed-icon {
+  width: 80px;
   margin-bottom: 30px;
 }
 .icon-heart {
@@ -890,11 +891,155 @@ footer {
     padding-left: 8.3%;
     padding-right: 8.3%;
   }
+  .main-watch {
+    padding-left: 5%;
+  }
   footer {
     padding-left: 3.3%;
     padding-right: 3.3%;
   }
+  .main-welcome {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .main-welcome-first{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    max-width: 660px;
+    gap: 30px;
+  }
+  .welcome-first-text, .welcome-second-text {
+    max-width: 560px;
+    gap: 30px;
+  }
+  .main-welcome-second {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+  }
+  .welcome-second-text {
+    margin: 0 auto;
+  }
+  .donation-text {
+    max-width: 577px;
+  }
+  .donation-action {
+    margin-bottom: auto;
+  }
+  .donation-button {
+    width: 320px;
+  }
+  .pets-grid {
+    padding-left: 4%;
+    gap: 20px;
+  }
+  .pet-card {
+    max-width: 455px;
+  }
+  .feed-container {
+    padding: 50px 4%;
+  }
+  .feed-content {
+    gap: 20px;
+  }
+  .feed-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feed-text p, h3 {
+    text-align: center;
+    max-width: 550px;
+  }
+  .feed-button{
+    align-self: flex-start;
+  }
+  .feedback-container {
+    flex-direction: column;
+    gap: 60px;
+    padding: 80px 0px 100px 5%;
+  }
+
+  .feedback-left {
+    flex: unset;
+    max-width: 600px;
+  }
+
+  .feedback-left h2 {
+    font-size: 42px;
+  }
+
+  .feedback-left p {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .feedback-button {
+    margin-top: 40px;
+  }
+
+  .feedback-right {
+    gap: 40px;
+    align-self: flex-end;
+  }
+
+  .feedback-comments {
+    gap: 20px;
+  }
+
+  .feedback-card {
+    padding: 100px 30px 40px;
+  }
+  .feedback-arrows {
+    margin-left: auto;
+    margin-right: 20px;
+    gap: 30px;
+  }
+  .favourite-container {
+    padding: 0;
+    gap: 60px;
+  }
+  .favourite-header {
+    margin: 150px 5% 0 5%;
+  }
+  .favourite-header h2 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  .favourite-header p {
+    font-size: 20px;
+  }
+
+  .favourite-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 0px 5%;
+  }
+
+  .favourite-card.big {
+    grid-column: 1 / -1;
+  }
+
+  .favourite-card img {
+    height: 300px;
+  }
+
+  .favourite-card.big img {
+    height: 420px;
+  }
+
+  .favourite-button {
+    max-width: 300px;
+    height: 60px;
+  }
+
+  .favourite-video img {
+    max-width: 1200px;
+    margin-bottom: 100px;
+  }
 }
+
 @media (max-width: 860px) {
   header {
     padding: 15px 20px;
