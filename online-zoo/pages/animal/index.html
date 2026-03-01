@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online-zoo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../../assets/contact/Favicon.svg" type="image/svg+xml">
+</head>
+
+<body class="panda-page">
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="../../assets/contact/Logo.svg" alt="Online-zoo logo">
+      </div>
+      <nav>
+        <ul class="header-nav">
+          <li><a href="../landing/index.html">About</a></li>
+          <li><a href="../map/index.html">Map</a></li>
+          <li><a href="./index.html" class="active">Zoos</a></li>
+          <li><a href="../contact/index.html">Contact us</a></li>
+          <li><a href="../contact/index.html">Design</a></li>
+        </ul>
+      </nav>
+      <div class="header-social">
+        <a href="https://www.youtube.com"><img src="../../assets/contact/YouTube.svg" alt="YouTube"></a>
+        <a href="https://www.instagram.com"><img src="../../assets/contact/Instagram.svg" alt="Instagram"></a>
+        <a href="https://www.facebook.com"><img src="../../assets/contact/Facebook.svg" alt="Facebook"></a>
+      </div>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <main class="layout">
+      <div class="live-cams-row">
+        <aside class="sidebar collapsed" id="sidebar">
+          <div class="live-badge">
+            <span>live</span>
+            <img src="../../assets/animal/Vector.svg" alt="Live icon">
+          </div>
+          <button class="toggle-button" id="toggleButton">
+            <img src="../../assets/animal/right icon sidebar.svg" alt="">
+          </button>
+          <ul class="animal-list">
+
+            <li class="animal-item" data-animal="panda">
+              <div class="icon-wrapper-outer">
+                <div class="icon-wrapper">
+                  <img src="../../assets/animal/Panda.svg" alt="">
+                </div>
+              </div>
+              <span class="animal-text">
+                Watch live from China's Panda Center
+              </span>
+            </li>
+
+            <li class="animal-item" data-animal="eagle">
+              <div class="icon-wrapper-outer">
+                <div class="icon-wrapper">
+                  <img src="../../assets/animal/Eagle.svg" alt="">
+                </div>
+              </div>
+              <span class="animal-text">
+                Watch The Bald Eagles Nest from West End cam
+              </span>
+            </li>
+
+            <li class="animal-item" data-animal="gorilla">
+              <div class="icon-wrapper-outer">
+                <div class="icon-wrapper">
+                  <img src="../../assets/animal/Gorilla.svg" alt="">
+                </div>
+              </div>
+              <span class="animal-text">
+                Livestream from Gorilla Forest Corridor habitat cam
+              </span>
+            </li>
+
+            <li class="animal-item" data-animal="lemur">
+              <div class="icon-wrapper-outer">
+                <div class="icon-wrapper">
+                  <img src="../../assets/animal/Lemur.svg" alt="">
+                </div>
+              </div>
+              <span class="animal-text">
+                The ring-tailed lemurs play in Madagascar, Lemuria Land
+              </span>
+            </li>
+            <li class="animal-item">
+              <span class="animal-text">
+                And more...
+            </li>
+          </ul>
+        </aside>
+        <div class="content">
+          <section class="main-content">
+            <div class="player-section">
+              <div class="player-header">
+                <h1 class="player-title">Live Panda Cams</h1>
+                <button class="donate-button">Donate Now <img src="../../assets/contact/button-arrow.svg"
+                    alt="arrow"></button>
+              </div>
+              <div class="video-player">
+                <div class="video-label">Lucas, the Giant Panda cam 1</div>
+                <div class="video-area">
+                  <button class="play-button-main">
+                    <img src="../../assets/animal/play button.svg" alt="Play button" class="play-button-default">
+                    <img src="../../assets/animal/play button(1).svg" alt="Play button" class="play-button-active">
+                  </button>
+                  <div class="video-logo">
+                    <img src="../../assets/contact/Logo white.svg" alt="Online Zoo">
+                  </div>
+                  <span class="video-line"></span>
+                  <div class="video-controls">
+                    <div class="controls-left">
+                      <button class="control-button"><img src="../../assets/animal/player/ico-play.svg"
+                          alt="Play"></button>
+                      <button class="control-button"><img src="../../assets/animal/player/ico-next.svg"
+                          alt="Next"></button>
+                      <button class="control-button"><img src="../../assets/animal/player/ico-sound.svg"
+                          alt="Volume"></button>
+                      <span class="live-label">&#8226; <b>live</b></span>
+                    </div>
+                    <div class="controls-right">
+                      <button class="control-button"><img src="../../assets/animal/player/ico-titles.svg"
+                          alt="Titles"></button>
+                      <button class="control-button"><img src="../../assets/animal/player/ico-hd.svg" alt="HD"></button>
+                      <button class="control-button"><img src="../../assets/animal/player/ico-theater.svg"
+                          alt="Theater"></button>
+                      <button class="control-button"><img src="../../assets/animal/player/ico-tv.svg" alt="TV"></button>
+                      <button class="control-button"><img src="../../assets/animal/player/ico-fullscreen.svg"
+                          alt="Fullscreen"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="more-views-section">
+              <h2 class="more-views-title">More live views</h2>
+              <div class="views-wrapper">
+                <button class="arrow-button left-arrow">
+                  <img src="../../assets/animal/arrow black.svg" alt="Previous" style="transform: rotate(180deg);">
+                </button>
+                <div class="cams-list">
+                  <div class="cam-card active">
+                    <div class="cam-thumb">
+                      <img src="../../assets/animal/Panda cam1.svg" alt="Cam 1">
+                      <div class="cam-label">Cam 1 <img src="../../assets/animal/Vector.svg" alt="Live icon"></div>
+                      <button class="play-button-small"><img src="../../assets/animal/play button.svg"
+                          alt="Play"></button>
+                    </div>
+                  </div>
+                  <div class="cam-card">
+                    <div class="cam-thumb">
+                      <img src="../../assets/animal/panda cam2.svg" alt="Cam 2">
+                      <div class="cam-label">Cam 2 <img src="../../assets/animal/Vector.svg" alt="Live icon"></div>
+                      <button class="play-button-small"><img src="../../assets/animal/play button.svg"
+                          alt="Play"></button>
+                    </div>
+                  </div>
+                  <div class="cam-card">
+                    <div class="cam-thumb">
+                      <img src="../../assets/animal/panda cam3.svg" alt="Cam 3">
+                      <div class="cam-label">Cam 3 <img src="../../assets/animal/Vector.svg" alt="Live icon"></div>
+                      <button class="play-button-small"><img src="../../assets/animal/play button.svg"
+                          alt="Play"></button>
+                    </div>
+                  </div>
+                </div>
+                <button class="arrow-button right-arrow">
+                  <img src="../../assets/animal/arrow black.svg" alt="Next">
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section class="main-donation">
+        <div class="donation-content">
+          <div class="donation-text">
+            <h2>Make The Bamboo Donation!</h2>
+            <p>Our process for bamboo donations first starts with a site evaluation. It is important that our team sees
+              where the bamboo is growing, then determining if the bamboo is a species that our animals are currently
+              eating. Thank you for your interest in donating bamboo for our pandas.</p>
+          </div>
+          <div class="donation-action">
+            <p>Quick Donate</p>
+            <button class="donation-button">
+              <span class="donation-text-part">$ Donation amount</span>
+              <span class="donation-arrow">
+                <img src="../../assets/contact/button-arrow.svg" alt="Arrow">
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="animal-info">
+        <div class="info-card">
+          <h2>Did you know?</h2>
+          <p>
+            Pandas are often seen eating in a relaxed sitting posture,
+            with their hind legs stretched out before them. They may appear
+            sedentary, but they are skilled tree-climbers and efficient swimmers.
+          </p>
+        </div>
+
+        <div class="info-main">
+          <div class="info-details">
+            <ul>
+              <li><strong>Common name:</strong> Giant Panda</li>
+              <li><strong>Scientific name:</strong> Ailuropoda melanoleuca</li>
+              <li><strong>Type:</strong> Herbivore</li>
+              <li><strong>Size:</strong> 4 to 5 feet</li>
+              <li><strong>Diet:</strong> Omnivore</li>
+              <li><strong>Habitat:</strong> Forests</li>
+              <li><strong>Range:</strong> Eastern Asia
+                <button>
+                  <a href="../map/index.html" class="view-map">View Map
+                    <img src="../../assets/animal/arrow orange.svg" alt="Arrow" class="info-arrow-default">
+                    <img src="../../assets/animal/arrow white.svg" alt="Arrow" class="info-arrow-active">
+                  </a>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="info-image">
+            <img src="../../assets/animal/info panda.svg" alt="Panda">
+          </div>
+        </div>
+
+        <div class="info-description">
+          <p>
+            Giant pandas are very unusual animals that eat almost exclusively bamboo,
+            which is very low in nutrients. Because of this, they have many unique
+            adaptations for their low-energy lifestyle. Giant pandas are solitary.
+            They have a highly developed sense of smell that males use to avoid each
+            other and to find females for mating in the spring. After a five-month pregnancy,
+            females give birth to a cub or two, though they cannot care for both twins.
+            The blind infants weigh only 5 ounces at birth and cannot crawl until they reach
+            three months of age. They are born white, and develop their much loved coloring later.
+            Habitat loss is the primary threat to this species. Its popularity around the world has
+            helped the giant panda become the focus of successful conservation programs.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo-nav">
+        <div class="footer-logos">
+          <img src="../../assets/contact/Logo white.svg" alt="Online-zoo logo">
+          <img src="../../assets/contact/Yem Digital.svg" alt="Yem Digital logo">
+          <img src="../../assets/contact/rs_school_js logo.svg" alt="RS School logo">
+        </div>
+        <nav>
+          <ul class="footer-nav">
+            <li><a href="../landing/index.html">About</a></li>
+            <li><a href="../map/index.html">Map</a></li>
+            <li><a href="./index.html">Zoos</a></li>
+            <li><a href="../contact/index.html">Contact us</a></li>
+          </ul>
+        </nav>
+        <button class="footer-button">Donate for volunteers
+          <img src="../../assets/contact/button-arrow.svg" alt="Arrow">
+        </button>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-author-social">
+        <div class="footer-author">
+          <span>© 2021 DinaK</span>
+          <span>© Yem Digital</span>
+          <span>RSSchool</span>
+        </div>
+        <div class="footer-social">
+          <span class="line-small-screen"></span>
+          <a href="https://www.youtube.com"><img src="../../assets/contact/YouTube.svg" alt="YouTube"></a>
+          <a href="https://www.instagram.com"><img src="../../assets/contact/Instagram.svg" alt="Instagram"></a>
+          <a href="https://www.facebook.com"><img src="../../assets/contact/Facebook.svg" alt="Facebook"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
