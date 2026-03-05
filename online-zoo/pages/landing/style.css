@@ -5,14 +5,16 @@
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
 }
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 :root {
   scroll-behavior: smooth;
   font-size: 18px;
 }
-button, a {
+button,
+a {
   cursor: pointer;
 }
 .container {
@@ -29,7 +31,7 @@ header {
   width: 100%;
   max-width: 1920px;
   height: 110px;
-  background-color: #F58021;
+  background-color: #f58021;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,8 +52,9 @@ header {
   line-height: 150%;
   text-transform: uppercase;
 }
-.header-nav a.active, .header-nav a:hover {
-  color: #00A092;
+.header-nav a.active,
+.header-nav a:hover {
+  color: #00a092;
   transition: color 0.3s ease;
 }
 .header-social {
@@ -81,55 +84,61 @@ header {
 /* section watch */
 
 .main-watch {
-	width: 100%;
-	max-width: 1846px;
-	min-height: 790px;
+  width: 100%;
+  max-width: 1846px;
+  min-height: 790px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-	align-items: flex-start;
-	background: linear-gradient(106.13deg, #FFFFFF 18.05%, rgba(255, 255, 255, 0.64684) 35.48%, 
-						rgba(255, 255, 255, 0) 45.95%), linear-gradient(267.79deg, #FFFFFF 2.85%, rgba(255, 255, 255, 0) 6.99%), 
-						linear-gradient(180.96deg, #FFFFFF 0.2%, rgba(255, 255, 255, 0) 5.62%), 
-						linear-gradient(219.86deg, #FFFFFF 0.49%, rgba(255, 255, 255, 0) 6.78%), 
-						linear-gradient(141.69deg, #FFFFFF 13.5%, rgba(247, 247, 247, 0) 22.24%), 
-						url(../../assets/landing/Background.svg);
+  align-items: flex-start;
+  background:
+    linear-gradient(
+      106.13deg,
+      #ffffff 18.05%,
+      rgba(255, 255, 255, 0.64684) 35.48%,
+      rgba(255, 255, 255, 0) 45.95%
+    ),
+    linear-gradient(267.79deg, #ffffff 2.85%, rgba(255, 255, 255, 0) 6.99%),
+    linear-gradient(180.96deg, #ffffff 0.2%, rgba(255, 255, 255, 0) 5.62%),
+    linear-gradient(219.86deg, #ffffff 0.49%, rgba(255, 255, 255, 0) 6.78%),
+    linear-gradient(141.69deg, #ffffff 13.5%, rgba(247, 247, 247, 0) 22.24%),
+    url(../../assets/landing/Background.svg);
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
-	padding-left: min(260px, 13.55%);
+  padding-left: min(260px, 13.55%);
 }
 .main-watch h1 {
-	font-weight: 800;
-	font-size: 82px;
-	line-height: 122%;
-	letter-spacing: 0.01em;
-	text-transform: uppercase;
-	color: #00A092;
+  font-weight: 800;
+  font-size: 82px;
+  line-height: 122%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #00a092;
 }
 .main-watch p {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 150%;
-	color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
   max-width: 430px;
-	margin-top: 50px;
+  margin-top: 50px;
 }
 .main-watch button {
-	padding: 26px 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	background: #F58021;
-	border: none;
-	border-radius: 5px;
-	margin-top: 45px;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 22px;
-	text-transform: uppercase;
-	color: #FFFFFF;
+  padding: 26px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #f58021;
+  border: none;
+  border-radius: 5px;
+  margin-top: 45px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
   cursor: pointer;
 }
 .main-watch button img {
@@ -137,43 +146,47 @@ header {
   height: 24px;
 }
 .main-watch button:hover {
-  background: #D26004;
+  background: #d26004;
   transition: background 0.3s ease;
 }
 
 /* section welcome */
 
 .main-welcome {
-	display: flex;
-	flex-direction: column;
-	gap: 150px;
-	padding-left: min(260px, 13.55%);
-	padding-right: min(260px, 13.55%);
-	padding-top: min(150px, 7.77%);
-	padding-bottom: min(150px, 7.77%);
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  padding-left: min(260px, 13.55%);
+  padding-right: min(260px, 13.55%);
+  padding-top: min(150px, 7.77%);
+  padding-bottom: min(150px, 7.77%);
 }
-.main-welcome-first, .main-welcome-second {
-	display: flex;
-	gap: 40px;
-	align-items: center;
+.main-welcome-first,
+.main-welcome-second {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
-.main-welcome-first h2, .main-welcome-second h2 {
-	font-weight: 600;
-	font-size: 54px;
-	line-height: 66px;
-	text-transform: uppercase;
-	color: #00A092;
+.main-welcome-first h2,
+.main-welcome-second h2 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #00a092;
 }
-.main-welcome-first p, .main-welcome-second p {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 150%;
-	color: #000000;
+.main-welcome-first p,
+.main-welcome-second p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
 }
-.welcome-first-text, .welcome-second-text {
-	display: flex;
-	flex-direction: column;
-	gap: 50px;
+.welcome-first-text,
+.welcome-second-text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 /* section donation */
@@ -182,8 +195,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 150px;
-  background-color: #20113D;
-  background: #20113D;
+  background-color: #20113d;
+  background: #20113d;
   padding: 50px min(260px, 13.55%);
   color: #ffffff;
 }
@@ -210,7 +223,7 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #EDE7F4;
+  color: #ede7f4;
 }
 .donation-action {
   display: flex;
@@ -231,7 +244,7 @@ header {
   max-width: 420px;
   height: 74px;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   overflow: hidden;
   font-weight: 600;
@@ -252,10 +265,10 @@ header {
   justify-content: center;
 
   width: 80px;
-  background: #F58021;
+  background: #f58021;
 }
 .donation-button:hover .donation-arrow {
-  background: #D26004;
+  background: #d26004;
 }
 
 /* section pets */
@@ -279,7 +292,7 @@ header {
   line-height: 66px;
   text-align: center;
   text-transform: uppercase;
-  color: #00A092;
+  color: #00a092;
 }
 .pets-header p {
   max-width: 920px;
@@ -300,25 +313,25 @@ header {
   justify-content: center;
   align-items: center;
   padding: 19px 18px;
-  border: 1px solid #20113D;
+  border: 1px solid #20113d;
   border-radius: 5px;
   background-color: transparent;
 }
 .slide-arrow {
   width: 24px;
   height: 24px;
-  background: url("../../assets/landing/arrow.svg") no-repeat center;
+  background: url('../../assets/landing/arrow.svg') no-repeat center;
   background-size: contain;
 }
 .arrow.left .slide-arrow {
   transform: rotate(180deg);
 }
 .arrow:hover {
-  background-color: #20113D;
+  background-color: #20113d;
   transition: background-color 0.3s ease;
 }
 .arrow:hover .slide-arrow {
-  background: url("../../assets/contact/button-arrow.svg") no-repeat center;
+  background: url('../../assets/contact/button-arrow.svg') no-repeat center;
   background-size: contain;
   transition: background 0.3s ease;
 }
@@ -329,7 +342,7 @@ header {
   gap: 40px;
 }
 .pet-card {
-  background: #20113D;
+  background: #20113d;
   border-radius: 5px;
   overflow: hidden;
   display: flex;
@@ -350,7 +363,7 @@ header {
   position: absolute;
   top: 0px;
   left: 0px;
-  background: #20113D;
+  background: #20113d;
   color: white;
   padding: 12px 19px;
   font-size: 26px;
@@ -372,19 +385,19 @@ header {
   font-size: 26px;
   line-height: 130%;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .pet-content p {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .pet-arrow {
   width: 24px;
   height: 24px;
-  background: url("../../assets/landing/arrow-orange.svg") no-repeat center;
+  background: url('../../assets/landing/arrow-orange.svg') no-repeat center;
   background-size: contain;
 }
 
@@ -400,19 +413,21 @@ header {
   font-size: 20.273px;
   line-height: 25px;
   text-transform: uppercase;
-  color: #F58021;
+  color: #f58021;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .pet-link:hover {
-  background-color: #F58021;
-  color: #FFFFFF;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #f58021;
+  color: #ffffff;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 .pet-link:hover .pet-arrow {
-  background: url("../../assets/contact/button-arrow.svg") no-repeat center;
+  background: url('../../assets/contact/button-arrow.svg') no-repeat center;
   background-size: contain;
   transition: background 0.3s ease;
 }
@@ -428,13 +443,13 @@ header {
   justify-content: center;
   align-items: center;
   padding: 26px 45px;
-  border: 1px solid #20113D;
+  border: 1px solid #20113d;
   border-radius: 5px;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  color: #20113D;
+  color: #20113d;
   gap: 10px;
   background-color: transparent;
   cursor: pointer;
@@ -442,16 +457,18 @@ header {
 .choose-button .arrow-icon {
   width: 24px;
   height: 24px;
-  background: url("../../assets/landing/arrow.svg") no-repeat center;
+  background: url('../../assets/landing/arrow.svg') no-repeat center;
   background-size: contain;
 }
 .choose-button:hover {
-  background-color: #20113D;
-  color: #FFFFFF;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #20113d;
+  color: #ffffff;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 .choose-button:hover .arrow-icon {
-  background: url("../../assets/contact/button-arrow.svg") no-repeat center;
+  background: url('../../assets/contact/button-arrow.svg') no-repeat center;
   background-size: contain;
   transition: background 0.3s ease;
 }
@@ -459,7 +476,7 @@ header {
 /* section pay and feed */
 
 .feed-container {
-  background: #20113D;
+  background: #20113d;
   padding: 90px min(260px, 13.55%);
   color: white;
 }
@@ -485,7 +502,7 @@ header {
 .feed-line {
   flex: 1;
   height: 1px;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 .feed-content {
   display: flex;
@@ -499,19 +516,19 @@ header {
 .icon-heart {
   max-width: 106px;
   height: 80px;
-  background: url("../../assets/landing/feed1.svg") no-repeat center;
+  background: url('../../assets/landing/feed1.svg') no-repeat center;
   background-size: contain;
 }
 .icon-money {
   max-width: 100px;
   height: 80px;
-  background: url("../../assets/landing/feed2.svg") no-repeat center;
+  background: url('../../assets/landing/feed2.svg') no-repeat center;
   background-size: contain;
 }
 .icon-charity {
   max-width: 80px;
   height: 80px;
-  background: url("../../assets/landing/feed3.svg") no-repeat center;
+  background: url('../../assets/landing/feed3.svg') no-repeat center;
   background-size: contain;
 }
 .feed-content img {
@@ -542,7 +559,7 @@ header {
   width: 240px;
   gap: 10px;
   padding: 26px 34px;
-  background: #F58021;
+  background: #f58021;
   border: none;
   border-radius: 5px;
   margin-top: 50px;
@@ -550,27 +567,28 @@ header {
   font-weight: 500;
   line-height: 22px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 .feed-arrow {
   width: 24px;
   height: 24px;
-  background: url("../../assets/contact/button-arrow.svg") no-repeat center;
+  background: url('../../assets/contact/button-arrow.svg') no-repeat center;
   background-size: contain;
 }
 .feed-button:hover {
-  background: #D26004;
+  background: #d26004;
   transition: background 0.3s ease;
 }
 
 /* section feedback */
 .main-feedback {
   color: white;
-  background-color: #20113D;
-  background: linear-gradient(177.34deg, #20113D 7.26%, rgba(32, 17, 61, 0) 14.89%), 
-              linear-gradient(144.77deg, #20113D 18.53%, rgba(32, 17, 61, 0) 46.43%), 
-              url("../../assets/landing/feedback-panda.svg") no-repeat 100% center;
+  background-color: #20113d;
+  background:
+    linear-gradient(177.34deg, #20113d 7.26%, rgba(32, 17, 61, 0) 14.89%),
+    linear-gradient(144.77deg, #20113d 18.53%, rgba(32, 17, 61, 0) 46.43%),
+    url('../../assets/landing/feedback-panda.svg') no-repeat 100% center;
 }
 .feedback-container {
   display: flex;
@@ -633,7 +651,7 @@ header {
   font-weight: 800;
   font-size: 120px;
   letter-spacing: 0.01em;
-  color: #00A092;
+  color: #00a092;
   position: absolute;
   top: 20px;
   left: 37px;
@@ -659,7 +677,7 @@ header {
 .feedback-arrow {
   width: 24px;
   height: 24px;
-  background: url("../../assets/contact/button-arrow.svg") no-repeat center;
+  background: url('../../assets/contact/button-arrow.svg') no-repeat center;
   background-size: contain;
 }
 .feedback-arrows .arrow.left {
@@ -673,7 +691,7 @@ header {
 }
 
 .feedback-arrows .arrow:hover .feedback-arrow {
-  background: url("../../assets/landing/arrow.svg") no-repeat center;
+  background: url('../../assets/landing/arrow.svg') no-repeat center;
   background-size: contain;
   transition: background 0.3s ease;
 }
@@ -699,7 +717,7 @@ header {
   font-size: 54px;
   line-height: 66px;
   text-transform: uppercase;
-  color: #00A092;
+  color: #00a092;
   text-align: center;
   max-width: 655px;
 }
@@ -708,7 +726,7 @@ header {
   font-size: 26px;
   line-height: 130%;
   text-align: center;
-  color: #20113D;
+  color: #20113d;
   max-width: 537px;
   align-self: center;
 }
@@ -721,7 +739,7 @@ header {
   grid-column: span 2;
 }
 .favourite-card {
-  background: #20113D;
+  background: #20113d;
   border-radius: 6px;
   overflow: hidden;
   display: flex;
@@ -750,7 +768,7 @@ header {
   align-self: center;
   padding: 24px 28px;
 }
-.favourite-content p{
+.favourite-content p {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
@@ -768,7 +786,7 @@ header {
   height: 74px;
   gap: 10px;
 
-  border: 1px solid #20113D;
+  border: 1px solid #20113d;
   border-radius: 5px;
   background: transparent;
 
@@ -776,7 +794,7 @@ header {
   font-size: 1rem;
   line-height: 22px;
   text-transform: uppercase;
-  color: #20113D;
+  color: #20113d;
 }
 .second-arrow {
   display: none;
@@ -787,8 +805,9 @@ header {
 .favourite-button:hover .second-arrow {
   display: block;
 }
-.favourite-button:hover, .favourite-button:active {
-  background: #20113D;
+.favourite-button:hover,
+.favourite-button:active {
+  background: #20113d;
   color: #ffffff;
   transition: background 0.3s ease;
 }
@@ -799,7 +818,7 @@ header {
 
 /* Footer */
 footer {
-  background: #20113D;
+  background: #20113d;
   padding-left: min(260px, 13.55%);
   padding-top: clamp(44px, 4.27%, 82px);
   padding-bottom: clamp(16px, 2.3%, 44px);
@@ -820,10 +839,10 @@ footer {
   text-transform: uppercase;
 }
 .footer-nav a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer-nav a:hover {
-  color: #00A092;
+  color: #00a092;
   transition: color 0.3s ease;
 }
 .footer-logos {
@@ -840,7 +859,7 @@ footer {
   height: 74px;
   gap: 10px;
 
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   background: transparent;
 
@@ -849,17 +868,18 @@ footer {
   line-height: 22px;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.footer-button:hover, .footer-button:active {
-  background: #00A092;
+.footer-button:hover,
+.footer-button:active {
+  background: #00a092;
   transition: background 0.3s ease;
 }
 .footer-line {
   width: 100%;
   max-width: 1400px;
   height: 0px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   margin-top: 80px;
 }
 .footer-author-social {
@@ -872,7 +892,7 @@ footer {
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   gap: 50px;
 }
@@ -902,13 +922,14 @@ footer {
     padding-left: 5%;
     padding-right: 5%;
   }
-  .main-welcome-first{
+  .main-welcome-first {
     flex-direction: column-reverse;
     align-items: flex-start;
     max-width: 660px;
     gap: 30px;
   }
-  .welcome-first-text, .welcome-second-text {
+  .welcome-first-text,
+  .welcome-second-text {
     max-width: 560px;
     gap: 30px;
   }
@@ -947,11 +968,12 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .feed-text p, h3 {
+  .feed-text p,
+  h3 {
     text-align: center;
     max-width: 550px;
   }
-  .feed-button{
+  .feed-button {
     align-self: flex-start;
   }
   .feedback-container {
@@ -1074,7 +1096,8 @@ footer {
     padding-left: 20px;
     padding-right: 47px;
   }
-  .header-nav, .header-social {
+  .header-nav,
+  .header-social {
     display: none;
   }
   .burger {

@@ -5,14 +5,16 @@
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
 }
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 :root {
   scroll-behavior: smooth;
   font-size: 18px;
 }
-button, a {
+button,
+a {
   cursor: pointer;
 }
 .container {
@@ -29,7 +31,7 @@ header {
   width: 100%;
   max-width: 1920px;
   height: 110px;
-  background-color: #F58021;
+  background-color: #f58021;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,8 +52,9 @@ header {
   line-height: 150%;
   text-transform: uppercase;
 }
-.header-nav a.active, .header-nav a:hover {
-  color: #00A092;
+.header-nav a.active,
+.header-nav a:hover {
+  color: #00a092;
   transition: color 0.3s ease;
 }
 .header-social {
@@ -94,7 +97,7 @@ header {
   line-height: 66px;
   text-align: center;
   text-transform: uppercase;
-  color: #20113D;
+  color: #20113d;
 }
 .map {
   position: relative;
@@ -119,7 +122,7 @@ header {
   position: absolute;
   width: clamp(32px, 6vw, 100px);
   aspect-ratio: 100 / 144;
-  background: url("../../assets/map/location-default.svg") no-repeat center/contain;
+  background: url('../../assets/map/location-default.svg') no-repeat center/contain;
   cursor: pointer;
   transition: 0.3s ease;
   pointer-events: auto;
@@ -135,7 +138,7 @@ header {
   object-fit: contain;
 }
 .pin:hover {
-  background: url("../../assets/map/location-active-inside.svg") no-repeat center/contain;
+  background: url('../../assets/map/location-active-inside.svg') no-repeat center/contain;
 }
 
 .eagle-svg {
@@ -154,33 +157,33 @@ header {
   filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 .gorilla-svg {
-	left: 49.17%;
-	top: 50.65%;
-	filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
+  left: 49.17%;
+  top: 50.65%;
+  filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 .lemur-svg {
-	left: 56.13%;
-	top: 63.94%;
-	filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
+  left: 56.13%;
+  top: 63.94%;
+  filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 .panda-svg {
-	left: 67.71%;
-	top: 37.36%;
-	filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
+  left: 67.71%;
+  top: 37.36%;
+  filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 .tiger-svg {
-	left: 71.99%;
-	top: 54.43%;
-	filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
+  left: 71.99%;
+  top: 54.43%;
+  filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 .koala-svg {
-	left: 81.81%;
-	top: 67.97%;
-	filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
+  left: 81.81%;
+  top: 67.97%;
+  filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 /* Footer */
 footer {
-  background: #20113D;
+  background: #20113d;
   padding-left: min(260px, 13.55%);
   padding-top: clamp(44px, 4.27%, 82px);
   padding-bottom: clamp(16px, 2.3%, 44px);
@@ -201,10 +204,10 @@ footer {
   text-transform: uppercase;
 }
 .footer-nav a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer-nav a:hover {
-  color: #00A092;
+  color: #00a092;
   transition: color 0.3s ease;
 }
 .footer-logos {
@@ -221,7 +224,7 @@ footer {
   height: 74px;
   gap: 10px;
 
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   background: transparent;
 
@@ -231,17 +234,18 @@ footer {
   line-height: 22px;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.footer-button:hover, .footer-button:active {
-  background: #00A092;
+.footer-button:hover,
+.footer-button:active {
+  background: #00a092;
   transition: background 0.3s ease;
 }
 .footer-line {
   width: 100%;
   max-width: 1400px;
   height: 0px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   margin-top: 80px;
 }
 .footer-author-social {
@@ -255,7 +259,7 @@ footer {
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   gap: 50px;
 }
@@ -312,7 +316,8 @@ footer {
     padding-left: 20px;
     padding-right: 47px;
   }
-  .header-nav, .header-social {
+  .header-nav,
+  .header-social {
     display: none;
   }
   .burger {

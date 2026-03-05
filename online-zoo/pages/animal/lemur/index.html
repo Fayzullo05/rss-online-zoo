@@ -1,312 +1,381 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online-zoo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../../popups/popupsimple.css" />
+    <link rel="icon" href="../../../assets/contact/Favicon.svg" type="image/svg+xml" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online-zoo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../../popups/popupsimple.css">
-  <link rel="icon" href="../../../assets/contact/Favicon.svg" type="image/svg+xml">
-</head>
-
-<body class="lemur-page">
-  <div class="container">
-    <header>
-      <div class="logo">
-        <img src="../../../assets/contact/Logo.svg" alt="Online-zoo logo">
-      </div>
-      <nav>
-        <ul class="header-nav">
-          <li><a href="../../landing/index.html">About</a></li>
-          <li><a href="../../map/index.html">Map</a></li>
-          <li><a href="../index.html" class="active">Zoos</a></li>
-          <li><a href="../../contact/index.html">Contact us</a></li>
-          <li><a href="../../contact/index.html">Design</a></li>
-        </ul>
-      </nav>
-      <div class="header-social">
-        <a href="https://www.youtube.com"><img src="../../../assets/contact/YouTube.svg" alt="YouTube"></a>
-        <a href="https://www.instagram.com"><img src="../../../assets/contact/Instagram.svg" alt="Instagram"></a>
-        <a href="https://www.facebook.com"><img src="../../../assets/contact/Facebook.svg" alt="Facebook"></a>
-      </div>
-      <div class="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </header>
-    <main class="layout">
-      <div class="live-cams-row">
-        <aside class="sidebar collapsed" id="sidebar">
-          <div class="live-badge">
-            <span>live</span>
-            <img src="../../../assets/animal/Vector.svg" alt="Live icon">
-          </div>
-          <button class="toggle-button" id="toggleButton">
-            <img src="../../../assets/animal/right icon sidebar.svg" alt="">
-          </button>
-          <ul class="animal-list">
-            <li class="animal-item" data-animal="lemur">
-              <div class="icon-wrapper-outer">
-                <div class="icon-wrapper">
-                  <a href="./index.html"><img src="../../../assets/animal/Lemur.svg" alt="Lemur icon"></a>
-                </div>
-              </div>
-              <span class="animal-text">
-                The ring-tailed lemurs play in Madagascar, Lemuria Land
-              </span>
-            </li>
-            <li class="animal-item" data-animal="gorilla">
-              <div class="icon-wrapper-outer">
-                <div class="icon-wrapper">
-                  <a href="../gorilla/index.html"><img src="../../../assets/animal/Gorilla.svg" alt="Gorilla icon"></a>
-                </div>
-              </div>
-              <span class="animal-text">
-                Livestream from Gorilla Forest Corridor habitat cam
-              </span>
-            </li>
-            <li class="animal-item" data-animal="panda">
-              <div class="icon-wrapper-outer">
-                <div class="icon-wrapper">
-                  <a href="../index.html"><img src="../../../assets/animal/Panda.svg" alt="Panda icon"></a>
-                </div>
-              </div>
-              <span class="animal-text">
-                Watch live from China's Panda Center
-              </span>
-            </li>
-            <li class="animal-item" data-animal="eagle">
-              <div class="icon-wrapper-outer">
-                <div class="icon-wrapper">
-                  <a href="../eagle/index.html"><img src="../../../assets/animal/Eagle.svg" alt="Eagle icon"></a>
-                </div>
-              </div>
-              <span class="animal-text">
-                Watch The Bald Eagles Nest from West End cam
-              </span>
-            </li>
-            <li class="animal-item">
-              <span class="animal-text">
-                And more...
-            </li>
-          </ul>
-        </aside>
-        <div class="content">
-          <section class="main-content">
-            <div class="player-section">
-              <div class="player-header">
-                <h1 class="player-title">lemurs cams</h1>
-                <button class="donate-button">Donate Now <img src="../../../assets/contact/button-arrow.svg"
-                    alt="arrow"></button>
-              </div>
-              <div class="video-player lemur-background">
-                <div class="video-label">Andy, the ring-tailed lemurs in Madagascar, Lemuria Land cam 1</div>
-                <div class="video-area">
-                  <button class="play-button-main">
-                    <img src="../../../assets/animal/play button.svg" alt="Play button" class="play-button-default">
-                    <img src="../../../assets/animal/play button(1).svg" alt="Play button" class="play-button-active">
-                  </button>
-                  <div class="video-logo">
-                    <img src="../../../assets/contact/Logo white.svg" alt="Online Zoo">
-                  </div>
-                  <span class="video-line"></span>
-                  <div class="video-controls">
-                    <div class="controls-left">
-                      <button class="control-button"><img src="../../../assets/animal/player/ico-play.svg"
-                          alt="Play"></button>
-                      <button class="control-button"><img src="../../../assets/animal/player/ico-next.svg"
-                          alt="Next"></button>
-                      <button class="control-button"><img src="../../../assets/animal/player/ico-sound.svg"
-                          alt="Volume"></button>
-                      <span class="live-label">&#8226; <b>live</b></span>
-                    </div>
-                    <div class="controls-right">
-                      <button class="control-button"><img src="../../../assets/animal/player/ico-titles.svg"
-                          alt="Titles"></button>
-                      <button class="control-button"><img src="../../../assets/animal/player/ico-hd.svg"
-                          alt="HD"></button>
-                      <button class="control-button"><img src="../../../assets/animal/player/ico-theater.svg"
-                          alt="Theater"></button>
-                      <button class="control-button"><img src="../../../assets/animal/player/ico-tv.svg"
-                          alt="TV"></button>
-                      <button class="control-button"><img src="../../../assets/animal/player/ico-fullscreen.svg"
-                          alt="Fullscreen"></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="more-views-section">
-              <h2 class="more-views-title">More live views</h2>
-              <div class="views-wrapper">
-                <button class="arrow-button left-arrow">
-                  <img src="../../../assets/animal/arrow black.svg" alt="Previous" style="transform: rotate(180deg);">
-                </button>
-                <div class="cams-list">
-                  <div class="cam-card active">
-                    <div class="cam-thumb">
-                      <img src="../../../assets/animal/lemur/lemur cam1.svg" alt="Cam 1">
-                      <div class="cam-label">Cam 1 <img src="../../../assets/animal/Vector.svg" alt="Live icon"></div>
-                      <button class="play-button-small"><img src="../../../assets/animal/play button.svg"
-                          alt="Play"></button>
-                    </div>
-                  </div>
-                  <div class="cam-card">
-                    <div class="cam-thumb">
-                      <img src="../../../assets/animal/lemur/lemur cam2.svg" alt="Cam 2">
-                      <div class="cam-label">Cam 2 <img src="../../../assets/animal/Vector.svg" alt="Live icon"></div>
-                      <button class="play-button-small"><img src="../../../assets/animal/play button.svg"
-                          alt="Play"></button>
-                    </div>
-                  </div>
-                  <div class="cam-card">
-                    <div class="cam-thumb">
-                      <img src="../../../assets/animal/lemur/lemur cam3.svg" alt="Cam 3">
-                      <div class="cam-label">Cam 3 <img src="../../../assets/animal/Vector.svg" alt="Live icon"></div>
-                      <button class="play-button-small"><img src="../../../assets/animal/play button.svg"
-                          alt="Play"></button>
-                    </div>
-                  </div>
-                </div>
-                <button class="arrow-button right-arrow">
-                  <img src="../../../assets/animal/arrow black.svg" alt="Next">
-                </button>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <section class="main-donation">
-        <div class="donation-content">
-          <div class="donation-text">
-            <h2>Provide Andy the lemur with fruits!</h2>
-            <p> More than 90% of lemur species are endangered and might face extinction in the nearest future. Watch the
-              ring-tailed lemurs play and climb in this soothing setting and support them by donating for the fruits
-              they adore.</p>
-          </div>
-          <div class="donation-action">
-            <p>Quick Donate</p>
-            <button class="donation-button">
-              <span class="donation-text-part">$ Donation amount</span>
-              <span class="donation-arrow">
-                <img src="../../../assets/contact/button-arrow.svg" alt="Arrow">
-              </span>
-            </button>
-          </div>
-        </div>
-      </section>
-      <section class="animal-info">
-        <div class="info-card">
-          <h2>Did you know?</h2>
-          <p>A ring-tailed lemur mob will gather in open areas of the forest to sunbathe. They sit in what some call a
-            "yoga position" with their bellies toward the sun and their arms and legs stretched out to the sides. </p>
-        </div>
-
-        <div class="info-main">
-          <div class="info-details">
-            <ul>
-              <li><strong>Common name:</strong> Ring-tailed lemur</li>
-              <li><strong>Scientific name:</strong> Lemur catta</li>
-              <li><strong>Type:</strong> Mammals</li>
-              <li><strong>Size:</strong>Head and body: 17.75 inches; tail: 21.75 inches</li>
-              <li><strong>Diet:</strong> Herbivore</li>
-              <li><strong>Habitat:</strong> Arid, open areas and forests</li>
-              <li><strong>Range:</strong> Southeast Asia
-                <button>
-                  <a href="../map/index.html" class="view-map">View Map
-                    <img src="../../../assets/animal/arrow orange.svg" alt="Arrow" class="info-arrow-default">
-                    <img src="../../../assets/animal/arrow white.svg" alt="Arrow" class="info-arrow-active">
-                  </a>
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          <div class="info-image">
-            <img src="../../../assets/animal/lemur/info lemur.svg" alt="Lemur image">
-          </div>
-        </div>
-
-        <div class="info-description">
-          <p>Ring-tailed lemurs are named for the 13 alternating black and white bands that adorn their tails. Unlike
-            most other lemurs, ringtails spend 40 percent of their time on the ground, moving quadrupedally along the
-            forest floor. Ring-tailed lemurs live in southwestern Madagascar, in arid, open areas and forests in
-            territories that range from 15 to 57 acres (0.06 to 0.2 square kilometers) in size. As with all lemurs,
-            olfactory communication is important for ringtails. Ring-tailed lemurs have scent glands on their wrists and
-            chests that they use to mark their foraging routes. Ringtails eat leaves, flowers and insects. They can also
-            eat fruit, herbs and small vertebrates.
-            Females usually give birth to their first baby when they are three years old, and usually once a year every
-            year after that. All adult females participate in raising the offspring of the group. The median life
-            expectancy for a ring-tailed lemur is about 16 years.</p>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-logo-nav">
-        <div class="footer-logos">
-          <img src="../../../assets/contact/Logo-white.svg" alt="Online-zoo logo">
-          <img src="../../../assets/contact/Yem-Digital.svg" alt="Yem Digital logo">
-          <img src="../../../assets/contact/rs-school-js-logo.svg" alt="RS School logo">
+  <body class="lemur-page">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="../../../assets/contact/Logo.svg" alt="Online-zoo logo" />
         </div>
         <nav>
-          <ul class="footer-nav">
+          <ul class="header-nav">
             <li><a href="../../landing/index.html">About</a></li>
             <li><a href="../../map/index.html">Map</a></li>
-            <li><a href="../../zoos/index.html">Zoos</a></li>
+            <li><a href="../index.html" class="active">Zoos</a></li>
             <li><a href="../../contact/index.html">Contact us</a></li>
+            <li><a href="../../contact/index.html">Design</a></li>
           </ul>
         </nav>
-        <button class="footer-button">Donate for volunteers
-          <img src="../../../assets/contact/button-arrow.svg" alt="Arrow">
-        </button>
-      </div>
-      <div class="footer-line"></div>
-      <div class="footer-author-social">
-        <div class="footer-author">
-          <span>© 2021 DinaK</span>
-          <span>© Yem Digital</span>
-          <span>RSSchool</span>
+        <div class="header-social">
+          <a href="https://www.youtube.com"
+            ><img src="../../../assets/contact/YouTube.svg" alt="YouTube"
+          /></a>
+          <a href="https://www.instagram.com"
+            ><img src="../../../assets/contact/Instagram.svg" alt="Instagram"
+          /></a>
+          <a href="https://www.facebook.com"
+            ><img src="../../../assets/contact/Facebook.svg" alt="Facebook"
+          /></a>
         </div>
-        <div class="footer-social">
-          <span class="line-small-screen"></span>
-          <a href="https://www.youtube.com"><img src="../../../assets/contact/YouTube.svg" alt="YouTube"></a>
-          <a href="https://www.instagram.com"><img src="../../../assets/contact/Instagram.svg" alt="Instagram"></a>
-          <a href="https://www.facebook.com"><img src="../../../assets/contact/Facebook.svg" alt="Facebook"></a>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+      <main class="layout">
+        <div class="live-cams-row">
+          <aside class="sidebar collapsed" id="sidebar">
+            <div class="live-badge">
+              <span>live</span>
+              <img src="../../../assets/animal/Vector.svg" alt="Live icon" />
+            </div>
+            <button class="toggle-button" id="toggleButton">
+              <img src="../../../assets/animal/right icon sidebar.svg" alt="" />
+            </button>
+            <ul class="animal-list">
+              <li class="animal-item" data-animal="lemur">
+                <div class="icon-wrapper-outer">
+                  <div class="icon-wrapper">
+                    <a href="./index.html"
+                      ><img src="../../../assets/animal/Lemur.svg" alt="Lemur icon"
+                    /></a>
+                  </div>
+                </div>
+                <span class="animal-text">
+                  The ring-tailed lemurs play in Madagascar, Lemuria Land
+                </span>
+              </li>
+              <li class="animal-item" data-animal="gorilla">
+                <div class="icon-wrapper-outer">
+                  <div class="icon-wrapper">
+                    <a href="../gorilla/index.html"
+                      ><img src="../../../assets/animal/Gorilla.svg" alt="Gorilla icon"
+                    /></a>
+                  </div>
+                </div>
+                <span class="animal-text">
+                  Livestream from Gorilla Forest Corridor habitat cam
+                </span>
+              </li>
+              <li class="animal-item" data-animal="panda">
+                <div class="icon-wrapper-outer">
+                  <div class="icon-wrapper">
+                    <a href="../index.html"
+                      ><img src="../../../assets/animal/Panda.svg" alt="Panda icon"
+                    /></a>
+                  </div>
+                </div>
+                <span class="animal-text"> Watch live from China's Panda Center </span>
+              </li>
+              <li class="animal-item" data-animal="eagle">
+                <div class="icon-wrapper-outer">
+                  <div class="icon-wrapper">
+                    <a href="../eagle/index.html"
+                      ><img src="../../../assets/animal/Eagle.svg" alt="Eagle icon"
+                    /></a>
+                  </div>
+                </div>
+                <span class="animal-text"> Watch The Bald Eagles Nest from West End cam </span>
+              </li>
+              <li class="animal-item">
+                <span class="animal-text"> And more... </span>
+              </li>
+            </ul>
+          </aside>
+          <div class="content">
+            <section class="main-content">
+              <div class="player-section">
+                <div class="player-header">
+                  <h1 class="player-title">lemurs cams</h1>
+                  <button class="donate-button">
+                    Donate Now <img src="../../../assets/contact/button-arrow.svg" alt="arrow" />
+                  </button>
+                </div>
+                <div class="video-player lemur-background">
+                  <div class="video-label">
+                    Andy, the ring-tailed lemurs in Madagascar, Lemuria Land cam 1
+                  </div>
+                  <div class="video-area">
+                    <button class="play-button-main">
+                      <img
+                        src="../../../assets/animal/play button.svg"
+                        alt="Play button"
+                        class="play-button-default"
+                      />
+                      <img
+                        src="../../../assets/animal/play button(1).svg"
+                        alt="Play button"
+                        class="play-button-active"
+                      />
+                    </button>
+                    <div class="video-logo">
+                      <img src="../../../assets/contact/Logo white.svg" alt="Online Zoo" />
+                    </div>
+                    <span class="video-line"></span>
+                    <div class="video-controls">
+                      <div class="controls-left">
+                        <button class="control-button">
+                          <img src="../../../assets/animal/player/ico-play.svg" alt="Play" />
+                        </button>
+                        <button class="control-button">
+                          <img src="../../../assets/animal/player/ico-next.svg" alt="Next" />
+                        </button>
+                        <button class="control-button">
+                          <img src="../../../assets/animal/player/ico-sound.svg" alt="Volume" />
+                        </button>
+                        <span class="live-label">&#8226; <b>live</b></span>
+                      </div>
+                      <div class="controls-right">
+                        <button class="control-button">
+                          <img src="../../../assets/animal/player/ico-titles.svg" alt="Titles" />
+                        </button>
+                        <button class="control-button">
+                          <img src="../../../assets/animal/player/ico-hd.svg" alt="HD" />
+                        </button>
+                        <button class="control-button">
+                          <img src="../../../assets/animal/player/ico-theater.svg" alt="Theater" />
+                        </button>
+                        <button class="control-button">
+                          <img src="../../../assets/animal/player/ico-tv.svg" alt="TV" />
+                        </button>
+                        <button class="control-button">
+                          <img
+                            src="../../../assets/animal/player/ico-fullscreen.svg"
+                            alt="Fullscreen"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="more-views-section">
+                <h2 class="more-views-title">More live views</h2>
+                <div class="views-wrapper">
+                  <button class="arrow-button left-arrow">
+                    <img
+                      src="../../../assets/animal/arrow black.svg"
+                      alt="Previous"
+                      style="transform: rotate(180deg)"
+                    />
+                  </button>
+                  <div class="cams-list">
+                    <div class="cam-card active">
+                      <div class="cam-thumb">
+                        <img src="../../../assets/animal/lemur/lemur cam1.svg" alt="Cam 1" />
+                        <div class="cam-label">
+                          Cam 1 <img src="../../../assets/animal/Vector.svg" alt="Live icon" />
+                        </div>
+                        <button class="play-button-small">
+                          <img src="../../../assets/animal/play button.svg" alt="Play" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cam-card">
+                      <div class="cam-thumb">
+                        <img src="../../../assets/animal/lemur/lemur cam2.svg" alt="Cam 2" />
+                        <div class="cam-label">
+                          Cam 2 <img src="../../../assets/animal/Vector.svg" alt="Live icon" />
+                        </div>
+                        <button class="play-button-small">
+                          <img src="../../../assets/animal/play button.svg" alt="Play" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cam-card">
+                      <div class="cam-thumb">
+                        <img src="../../../assets/animal/lemur/lemur cam3.svg" alt="Cam 3" />
+                        <div class="cam-label">
+                          Cam 3 <img src="../../../assets/animal/Vector.svg" alt="Live icon" />
+                        </div>
+                        <button class="play-button-small">
+                          <img src="../../../assets/animal/play button.svg" alt="Play" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="arrow-button right-arrow">
+                    <img src="../../../assets/animal/arrow black.svg" alt="Next" />
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <section class="main-donation">
+          <div class="donation-content">
+            <div class="donation-text">
+              <h2>Provide Andy the lemur with fruits!</h2>
+              <p>
+                More than 90% of lemur species are endangered and might face extinction in the
+                nearest future. Watch the ring-tailed lemurs play and climb in this soothing setting
+                and support them by donating for the fruits they adore.
+              </p>
+            </div>
+            <div class="donation-action">
+              <p>Quick Donate</p>
+              <button class="donation-button">
+                <span class="donation-text-part">$ Donation amount</span>
+                <span class="donation-arrow">
+                  <img src="../../../assets/contact/button-arrow.svg" alt="Arrow" />
+                </span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="animal-info">
+          <div class="info-card">
+            <h2>Did you know?</h2>
+            <p>
+              A ring-tailed lemur mob will gather in open areas of the forest to sunbathe. They sit
+              in what some call a "yoga position" with their bellies toward the sun and their arms
+              and legs stretched out to the sides.
+            </p>
+          </div>
+
+          <div class="info-main">
+            <div class="info-details">
+              <ul>
+                <li><strong>Common name:</strong> Ring-tailed lemur</li>
+                <li><strong>Scientific name:</strong> Lemur catta</li>
+                <li><strong>Type:</strong> Mammals</li>
+                <li><strong>Size:</strong>Head and body: 17.75 inches; tail: 21.75 inches</li>
+                <li><strong>Diet:</strong> Herbivore</li>
+                <li><strong>Habitat:</strong> Arid, open areas and forests</li>
+                <li>
+                  <strong>Range:</strong> Southeast Asia
+                  <button>
+                    <a href="../map/index.html" class="view-map"
+                      >View Map
+                      <img
+                        src="../../../assets/animal/arrow orange.svg"
+                        alt="Arrow"
+                        class="info-arrow-default"
+                      />
+                      <img
+                        src="../../../assets/animal/arrow white.svg"
+                        alt="Arrow"
+                        class="info-arrow-active"
+                      />
+                    </a>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-image">
+              <img src="../../../assets/animal/lemur/info lemur.svg" alt="Lemur image" />
+            </div>
+          </div>
+
+          <div class="info-description">
+            <p>
+              Ring-tailed lemurs are named for the 13 alternating black and white bands that adorn
+              their tails. Unlike most other lemurs, ringtails spend 40 percent of their time on the
+              ground, moving quadrupedally along the forest floor. Ring-tailed lemurs live in
+              southwestern Madagascar, in arid, open areas and forests in territories that range
+              from 15 to 57 acres (0.06 to 0.2 square kilometers) in size. As with all lemurs,
+              olfactory communication is important for ringtails. Ring-tailed lemurs have scent
+              glands on their wrists and chests that they use to mark their foraging routes.
+              Ringtails eat leaves, flowers and insects. They can also eat fruit, herbs and small
+              vertebrates. Females usually give birth to their first baby when they are three years
+              old, and usually once a year every year after that. All adult females participate in
+              raising the offspring of the group. The median life expectancy for a ring-tailed lemur
+              is about 16 years.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-logo-nav">
+          <div class="footer-logos">
+            <img src="../../../assets/contact/Logo-white.svg" alt="Online-zoo logo" />
+            <img src="../../../assets/contact/Yem-Digital.svg" alt="Yem Digital logo" />
+            <img src="../../../assets/contact/rs-school-js-logo.svg" alt="RS School logo" />
+          </div>
+          <nav>
+            <ul class="footer-nav">
+              <li><a href="../../landing/index.html">About</a></li>
+              <li><a href="../../map/index.html">Map</a></li>
+              <li><a href="../../zoos/index.html">Zoos</a></li>
+              <li><a href="../../contact/index.html">Contact us</a></li>
+            </ul>
+          </nav>
+          <button class="footer-button">
+            Donate for volunteers
+            <img src="../../../assets/contact/button-arrow.svg" alt="Arrow" />
+          </button>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-author-social">
+          <div class="footer-author">
+            <span>© 2021 DinaK</span>
+            <span>© Yem Digital</span>
+            <span>RSSchool</span>
+          </div>
+          <div class="footer-social">
+            <span class="line-small-screen"></span>
+            <a href="https://www.youtube.com"
+              ><img src="../../../assets/contact/YouTube.svg" alt="YouTube"
+            /></a>
+            <a href="https://www.instagram.com"
+              ><img src="../../../assets/contact/Instagram.svg" alt="Instagram"
+            /></a>
+            <a href="https://www.facebook.com"
+              ><img src="../../../assets/contact/Facebook.svg" alt="Facebook"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="donation-modal" id="donationModal">
+      <div class="modal-image">
+        <button class="modal-close" id="modalClose">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h2>TOGETHER WE CARE, SAVE AND PROTECT!</h2>
+        <p>
+          Your most generous gift not only cares for countless animals, but it also offers hope and
+          a vital lifeline to the world's most endangered wildlife relying on us to survive.
+        </p>
+
+        <div class="modal-amounts">
+          <button class="amount">$20</button>
+          <button class="amount">$30</button>
+          <button class="amount">$50</button>
+          <button class="amount">$80</button>
+          <button class="amount">$100</button>
+          <button class="amount other">OTHER AMOUNT</button>
         </div>
       </div>
-    </footer>
-  </div>
-  <div class="overlay" id="overlay"></div>
-  <div class="donation-modal" id="donationModal">
-    <div class="modal-image">
-      <button class="modal-close" id="modalClose">&times;</button>
     </div>
-    <div class="modal-body">
-      <h2>TOGETHER WE CARE, SAVE AND PROTECT!</h2>
-      <p>
-        Your most generous gift not only cares for countless animals,
-        but it also offers hope and a vital lifeline to the world's most
-        endangered wildlife relying on us to survive.
-      </p>
-
-      <div class="modal-amounts">
-        <button class="amount">$20</button>
-        <button class="amount">$30</button>
-        <button class="amount">$50</button>
-        <button class="amount">$80</button>
-        <button class="amount">$100</button>
-        <button class="amount other">OTHER AMOUNT</button>
-      </div>
-    </div>
-  </div>
-  </div>
-  <script src="../../popups/popupsimple.js"></script>
-  <script src="../script.js"></script>
-</body>
-
+    <script src="../../popups/popupsimple.js"></script>
+    <script src="../script.js"></script>
+  </body>
 </html>

@@ -2,7 +2,7 @@
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
@@ -78,7 +78,7 @@ html.modal-open {
   font-size: 54px;
   text-align: center;
   text-transform: uppercase;
-  color: #F58021;
+  color: #f58021;
 }
 
 .modal-body > p {
@@ -99,7 +99,7 @@ html.modal-open {
 .amount {
   padding: 16px 8px;
   border: none;
-  background: #00A092;
+  background: #00a092;
   color: white;
   font-weight: 600;
   font-size: 14px;
