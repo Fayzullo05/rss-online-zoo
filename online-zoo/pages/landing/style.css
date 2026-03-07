@@ -1155,3 +1155,11 @@ footer {
     align-items: center;
   }
 }
+
+/* Functionality part */
+
+#petsLoader {
+  text-align: center;
+  font-size: 36px;
+  margin: 40px 0;
+}
