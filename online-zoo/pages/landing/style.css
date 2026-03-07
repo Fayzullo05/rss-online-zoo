@@ -336,10 +336,11 @@ header {
   transition: background 0.3s ease;
 }
 .pets-grid {
-  padding-left: min(260px, 13.55%);
   display: grid;
-  grid-template-columns: repeat(4, min(460px, 100% / 2));
+  grid-auto-flow: column;
+  grid-auto-columns: 460px;
   gap: 40px;
+  transition: transform 0.4s ease;
 }
 .pet-card {
   background: #20113d;
@@ -1158,8 +1159,11 @@ footer {
 
 /* Functionality part */
 
-#petsLoader {
-  text-align: center;
-  font-size: 36px;
-  margin: 40px 0;
+.pets-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.pets-grid {
+  transition: transform 0.4s ease;
 }
