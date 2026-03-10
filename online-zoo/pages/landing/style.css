@@ -594,7 +594,7 @@ header {
 .feedback-container {
   display: flex;
   padding: min(100px, 5.2%) 0px min(150px, 7.8%) min(260px, 13.55%);
-  gap: 160px;
+  gap: 40px;
 }
 .feedback-left {
   display: flex;
@@ -624,8 +624,11 @@ header {
 }
 .feedback-comments {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-columns: calc((100% - 30px) / 2);
   gap: 30px;
+  transition: transform 0.4s ease;
 }
 .feedback-card {
   background: #ffffff;
@@ -636,7 +639,7 @@ header {
   flex-direction: column;
   gap: 20px;
   color: #000000;
-  max-width: 515px;
+  width: 100%;
 }
 .feedback-card h3 {
   font-weight: 500;
@@ -1162,6 +1165,13 @@ footer {
 .pets-slider {
   overflow: hidden;
   width: 100%;
+  margin-left: min(260px, 13.55%);
+}
+
+.feedback-slider {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1060px;
 }
 
 .pets-grid {
