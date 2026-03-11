@@ -55,56 +55,8 @@
             <button class="toggle-button" id="toggleButton">
               <img src="../../assets/animal/right icon sidebar.svg" alt="" />
             </button>
-            <ul class="animal-list">
-              <li class="animal-item" data-animal="panda">
-                <div class="icon-wrapper-outer">
-                  <div class="icon-wrapper">
-                    <a href="./index.html"><img src="../../assets/animal/Panda.svg" alt="" /></a>
-                  </div>
-                </div>
-                <span class="animal-text"> Watch live from China's Panda Center </span>
-              </li>
-
-              <li class="animal-item" data-animal="eagle">
-                <div class="icon-wrapper-outer">
-                  <div class="icon-wrapper">
-                    <a href="./eagle/index.html"
-                      ><img src="../../assets/animal/Eagle.svg" alt="Eagle icon"
-                    /></a>
-                  </div>
-                </div>
-                <span class="animal-text"> Watch The Bald Eagles Nest from West End cam </span>
-              </li>
-
-              <li class="animal-item" data-animal="gorilla">
-                <div class="icon-wrapper-outer">
-                  <div class="icon-wrapper">
-                    <a href="./gorilla/index.html"
-                      ><img src="../../assets/animal/Gorilla.svg" alt="Gorilla icon"
-                    /></a>
-                  </div>
-                </div>
-                <span class="animal-text">
-                  Livestream from Gorilla Forest Corridor habitat cam
-                </span>
-              </li>
-
-              <li class="animal-item" data-animal="lemur">
-                <div class="icon-wrapper-outer">
-                  <div class="icon-wrapper">
-                    <a href="./lemur/index.html"
-                      ><img src="../../assets/animal/Lemur.svg" alt="Lemur icon"
-                    /></a>
-                  </div>
-                </div>
-                <span class="animal-text">
-                  The ring-tailed lemurs play in Madagascar, Lemuria Land
-                </span>
-              </li>
-              <li class="animal-item">
-                <span class="animal-text"> And more... </span>
-              </li>
-            </ul>
+            <div id="zooLoader">Loading...</div>
+            <ul class="animal-list" id="sideMenu"></ul>
           </aside>
           <div class="content">
             <section class="main-content">
@@ -374,5 +326,6 @@
       </div>
     </div>
     <script src="../popups/popupsimple.js"></script>
+    <script type="module" src="../../scripts/zoo.ts"></script>
   </body>
 </html>
