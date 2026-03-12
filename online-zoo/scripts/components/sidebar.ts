@@ -1,15 +1,14 @@
 import type { Camera } from '../types/camera.interface';
 
-const iconMap: Record<string, string> = {
+const iconMap: Record<number, string> = {
   1: 'Panda.svg',
-  2: 'Eagle.svg',
+  5: 'Eagle.svg',
   3: 'Gorilla.svg',
-  4: 'Lemur.svg',
+  2: 'Lemur.svg',
 };
 
 export function renderSidebar(cameras: Camera[]): void {
   const menu = document.getElementById('sideMenu');
-
   if (!menu) return;
 
   menu.innerHTML = '';

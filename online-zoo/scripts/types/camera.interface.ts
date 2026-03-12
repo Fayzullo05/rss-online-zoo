@@ -1,5 +1,5 @@
 export interface Camera {
   id: number;
-  petId: string;
+  petId: number;
   text: string;
 }
