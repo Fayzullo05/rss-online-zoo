@@ -776,6 +776,9 @@ header {
 .info-description {
   margin-top: 60px;
   max-width: 1160px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
 }
 
 /* Footer */
@@ -1407,4 +1410,9 @@ footer {
   font-size: 24px;
   color: white;
   z-index: 1000;
+}
+
+#zooLoader {
+  align-items: center;
+  margin-top: 50px;
 }
