@@ -25,6 +25,7 @@ export function renderZooInfo(pet: PetDetails): void {
               <strong>Range:</strong> ${pet.range}
               <button class="view-map">
                 View Map
+                <img src="../../assets/animal/arrow orange.svg" alt="Arrow" class="info-arrow-default">
               </button>
             </li>
           </ul>
