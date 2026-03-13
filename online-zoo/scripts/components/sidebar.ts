@@ -16,6 +16,7 @@ export function renderSidebar(cameras: Camera[]): void {
   cameras.slice(0, 4).forEach((camera) => {
     const item = document.createElement('li');
     item.className = 'animal-item';
+    item.dataset.pet = String(camera.petId);
 
     const icon = iconMap[camera.petId] ?? 'Panda.svg';
 
