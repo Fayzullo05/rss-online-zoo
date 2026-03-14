@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+
+  <body>
+    <main class="auth-page">
+      <h1>Registration</h1>
+
+      <form class="auth-form" id="registerForm">
+        <div class="form-group">
+          <label for="login">Login</label>
+          <input id="login" type="text" placeholder="Enter login" />
+          <div class="error-message" id="loginValidation"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" />
+          <div class="error-message" id="nameValidation"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your email" />
+          <div class="error-message"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Enter password" />
+          <div class="error-message" id="passwordValidation"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input id="confirmPassword" type="password" placeholder="Confirm password" />
+          <div class="error-message" id="confirmValidation"></div>
+        </div>
+
+        <div class="error-message" id="registerError"></div>
+
+        <button id="registerButton" type="button" disabled>Register</button>
+      </form>
+
+      <p>
+        Already have an account?
+        <a href="../login/index.html">Sign In</a>
+      </p>
+    </main>
+
+    <script type="module" src="../../scripts/pages/register.ts"></script>
+  </body>
+</html>
