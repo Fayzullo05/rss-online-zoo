@@ -3,6 +3,8 @@ import { renderSidebar } from './components/sidebar';
 import { initSidebarToggle } from './components/sidebarToggle';
 import { renderZooInfo } from './components/zoo-info';
 import { getPetById } from './services/pets.service';
+import { openMap, initMapModal } from './components/mapModal';
+import 'leaflet/dist/leaflet.css';
 
 async function loadZoo(): Promise<void> {
   const loader = document.getElementById('zooLoader');
@@ -23,6 +25,19 @@ async function loadZoo(): Promise<void> {
 
       const petId = Number(item.dataset.pet);
       loadPetInfo(petId);
+    });
+
+    document.addEventListener('click', (event) => {
+      const button = (event.target as HTMLElement).closest('.view-map');
+
+      if (!button) return;
+
+      const lat = button.getAttribute('data-lat');
+      const lng = button.getAttribute('data-lng');
+
+      if (!lat || !lng) return;
+
+      openMap(lat, lng);
     });
 
     if (loader) loader.style.display = 'none';
@@ -54,3 +69,4 @@ async function loadPetInfo(petId: number): Promise<void> {
 loadZoo();
 initSidebarToggle();
 loadPetInfo(1);
+initMapModal();

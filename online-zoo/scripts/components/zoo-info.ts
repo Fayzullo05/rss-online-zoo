@@ -23,7 +23,7 @@ export function renderZooInfo(pet: PetDetails): void {
 
             <li>
               <strong>Range:</strong> ${pet.range}
-              <button class="view-map">
+              <button class="view-map" data-lat="${pet.latitude}" data-lng="${pet.longitude}">
                 View Map
                 <img src="../../assets/animal/arrow orange.svg" alt="Arrow" class="info-arrow-default">
               </button>
