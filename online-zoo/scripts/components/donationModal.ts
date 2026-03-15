@@ -1,5 +1,21 @@
+import { getPets } from '../services/pets.service';
+
 let selectedAmount: number | null = null;
 let selectedPet: string | null = null;
+let donorName = '';
+let donorEmail = '';
+
+function showStep(step: 1 | 2 | 3): void {
+  const s1 = document.getElementById('donationStep1');
+  const s2 = document.getElementById('donationStep2');
+  const s3 = document.getElementById('donationStep3');
+
+  if (!s1 || !s2 || !s3) return;
+
+  s1.style.display = step === 1 ? 'block' : 'none';
+  s2.style.display = step === 2 ? 'block' : 'none';
+  s3.style.display = step === 3 ? 'block' : 'none';
+}
 
 function updateNextButton(): void {
   const next = document.getElementById('step1Next') as HTMLButtonElement;
@@ -15,13 +31,21 @@ function initStep1Logic(): void {
 
   buttons.forEach((btn) => {
     btn.addEventListener('click', () => {
+
+      buttons.forEach(b => b.classList.remove('active'));
+
+      btn.classList.add('active');
+
       selectedAmount = Number((btn as HTMLElement).dataset.value);
+
       updateNextButton();
     });
   });
 
   otherInput?.addEventListener('input', () => {
     const value = otherInput.value;
+
+    buttons.forEach(b => b.classList.remove('active'));
 
     if (/^[0-9]+$/.test(value) && Number(value) > 0) {
       selectedAmount = Number(value);
@@ -43,7 +67,9 @@ function renderStep1(): void {
   if (!step1) return;
 
   step1.innerHTML = `
-    <h2>MAKE YOUR DONATION</h2>
+    <p class="donation-info">Donation Information:</p>
+
+    <p class="donation-label">* Choose your donation amount:</p>
 
     <div class="amounts">
       <button class="donation-option" data-value="10">$10</button>
@@ -54,17 +80,40 @@ function renderStep1(): void {
       <button class="donation-option" data-value="100">$100</button>
     </div>
 
-    <input id="otherAmount" placeholder="Other amount">
+    <div class="donation-row">
+      <button class="secondary-btn">OTHER AMOUNT</button>
+      <input id="otherAmount" type="text">
+    </div>
 
-    <select id="petSelect">
-      <option value="">Choose your favourite</option>
-      <option value="Panda">Panda</option>
-      <option value="Tiger">Tiger</option>
-      <option value="Lion">Lion</option>
-    </select>
+    <div class="donation-row">
+      <button class="secondary-btn">FOR SPECIAL PET</button>
+      <select id="petSelect">
+        <option value="" disabled selected>Choose your favourite</option>
+      </select>
+    </div>
 
-    <button id="step1Next" disabled>NEXT</button>
+    <label class="donation-checkbox">
+      <input type="checkbox">
+      Make this a monthly recurring gift
+    </label>
+
+    <div class="donation-footer">
+      <button id="step1Next" disabled>NEXT →</button>
+    </div>
   `;
+
+    const petSelect = document.getElementById('petSelect');
+
+    getPets().then((pets) => {
+      if (!petSelect) return;
+
+      pets.forEach((pet) => {
+        const option = document.createElement('option');
+        option.value = pet.name;
+        option.textContent = pet.name;
+        petSelect.appendChild(option);
+      });
+    });
 
   initStep1Logic();
 }
@@ -72,8 +121,15 @@ function renderStep1(): void {
 export function initDonationModal(): void {
   const modal = document.getElementById('donationModalMain');
   const close = document.getElementById('donationClose');
+  const open = document.getElementById('openDonationModal');
 
-  if (!modal || !close) return;
+  if (!modal || !close || !open) return;
+
+  open.addEventListener('click', () => {
+    modal.style.display = 'flex';
+    renderStep1();
+    showStep(1);
+  });
 
   close.addEventListener('click', () => {
     modal.style.display = 'none';
