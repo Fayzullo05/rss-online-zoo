@@ -1,9 +1,18 @@
 import { getPets } from '../services/pets.service';
+import { getUser } from '../utils/auth';
 
 let selectedAmount: number | null = null;
 let selectedPet: string | null = null;
 let donorName = '';
 let donorEmail = '';
+
+function validateName(name: string): boolean {
+  return /^[A-Za-z\s]+$/.test(name);
+}
+
+function validateEmail(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
 
 function showStep(step: 1 | 2 | 3): void {
   const s1 = document.getElementById('donationStep1');
@@ -60,6 +69,13 @@ function initStep1Logic(): void {
     selectedPet = petSelect.value || null;
     updateNextButton();
   });
+
+  const next = document.getElementById('step1Next');
+
+  next?.addEventListener('click', () => {
+    showStep(2);
+    renderStep2();
+  });
 }
 
 function renderStep1(): void {
@@ -98,6 +114,11 @@ function renderStep1(): void {
     </label>
 
     <div class="donation-footer">
+      <div class="donation-steps">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
       <button id="step1Next" disabled>NEXT →</button>
     </div>
   `;
@@ -116,6 +137,64 @@ function renderStep1(): void {
     });
 
   initStep1Logic();
+}
+
+function renderStep2(): void {
+  const step2 = document.getElementById('donationStep2');
+  if (!step2) return;
+
+  const user = getUser();
+
+  step2.innerHTML = `
+    <div class="donation-step">
+
+      <p class="donation-info">Billing Information:</p>
+
+      <label class="donation-field">
+        <span>* Your Name</span>
+        <input
+          id="donorName"
+          type="text"
+          placeholder="First and last name"
+          value="${user?.name ?? ''}"
+        >
+      </label>
+
+      <label class="donation-field">
+        <span>* Your Email Address</span>
+        <input
+          id="donorEmail"
+          type="email"
+          placeholder="Enter your email"
+          value="${user?.email ?? ''}"
+        >
+      </label>
+
+      <p class="donation-note">
+        You will receive emails from the Online Zoo, including updates and news
+        on the latest discoveries and translations. You can unsubscribe at any time.
+      </p>
+
+      <div class="donation-footer">
+
+        <div class="donation-steps">
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+        </div>
+
+        <button id="step2Back" class="back-btn">Back</button>
+
+        <button id="step2Next" disabled>
+          NEXT →
+        </button>
+
+      </div>
+
+    </div>
+  `;
+
+  initStep2Logic();
 }
 
 export function initDonationModal(): void {

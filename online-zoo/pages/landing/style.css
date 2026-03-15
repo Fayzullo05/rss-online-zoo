@@ -1409,7 +1409,7 @@ footer {
 
 #step1Next {
   margin: 0;
-  width: 200px;
+  width: 150px;
   height: 74px;
   border: none;
   border-radius: 5px;
@@ -1428,6 +1428,107 @@ footer {
 }
 
 #step1Next:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.donation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+}
+
+.donation-form input {
+  height: 60px;
+  padding: 0 16px;
+  font-size: 20px;
+}
+
+#donationStep2 {
+  padding: 40px 80px;
+}
+
+.donation-step {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.donation-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.donation-field input {
+  height: 60px;
+  padding: 0 16px;
+  font-size: 20px;
+}
+
+.donation-field span {
+  font-size: 18px;
+}
+
+.donation-note {
+  font-size: 14px;
+  color: #777;
+  max-width: 520px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #00a092;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.donation-steps {
+  display: flex;
+  gap: 8px;
+  margin-right: auto;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #80cfc8;
+}
+
+.dot.active {
+  background: #00a092;
+}
+
+.donation-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#step2Next {
+  margin: 0;
+  width: 150px;
+  height: 74px;
+  border: none;
+  border-radius: 5px;
+  background: #00a092;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#step2Next:hover:enabled {
+  background: #05786e;
+  transition: background-color 0.3s ease;
+}
+
+#step2Next:disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }
