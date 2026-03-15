@@ -8,6 +8,71 @@ const confirmInput = document.getElementById('confirmPassword') as HTMLInputElem
 const button = document.getElementById('registerButton') as HTMLButtonElement;
 const errorText = document.getElementById('registerError');
 
+const loginValidation = document.getElementById('loginValidation');
+const nameValidation = document.getElementById('nameValidation');
+const passwordValidation = document.getElementById('passwordValidation');
+const confirmValidation = document.getElementById('confirmValidation');
+
+loginInput.addEventListener('blur', () => {
+  if (!validateLogin()) {
+    loginInput.classList.add('input-error');
+
+    if (loginValidation) {
+      loginValidation.textContent = 'Login must start with a letter and contain only letters';
+    }
+  }
+});
+
+nameInput.addEventListener('blur', () => {
+  if (!validateName()) {
+    nameInput.classList.add('input-error');
+
+    if (nameValidation) {
+      nameValidation.textContent = 'Name must contain only letters (min 3)';
+    }
+  }
+});
+
+passwordInput.addEventListener('blur', () => {
+  if (!validatePassword()) {
+    passwordInput.classList.add('input-error');
+
+    if (passwordValidation) {
+      passwordValidation.textContent = 'Password must contain special character';
+    }
+  }
+});
+
+confirmInput.addEventListener('blur', () => {
+  if (!validateConfirm()) {
+    confirmInput.classList.add('input-error');
+
+    if (confirmValidation) {
+      confirmValidation.textContent = 'Passwords do not match';
+    }
+  }
+});
+
+loginInput.addEventListener('focus', () => {
+  loginInput.classList.remove('input-error');
+  if (loginValidation) loginValidation.textContent = '';
+});
+
+nameInput.addEventListener('focus', () => {
+  nameInput.classList.remove('input-error');
+  if (nameValidation) nameValidation.textContent = '';
+});
+
+passwordInput.addEventListener('focus', () => {
+  passwordInput.classList.remove('input-error');
+  if (passwordValidation) passwordValidation.textContent = '';
+});
+
+confirmInput.addEventListener('focus', () => {
+  confirmInput.classList.remove('input-error');
+  if (confirmValidation) confirmValidation.textContent = '';
+});
+
 function validateLogin(): boolean {
   return /^[A-Za-z][A-Za-z]{2,}$/.test(loginInput.value);
 }
