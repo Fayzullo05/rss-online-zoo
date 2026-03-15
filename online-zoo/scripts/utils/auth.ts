@@ -6,9 +6,16 @@ export interface User {
 
 export function getUser(): User | null {
   const data = localStorage.getItem('user');
-  return data ? JSON.parse(data) : null;
+  if (!data) return null;
+
+  return JSON.parse(data);
+}
+
+export function getToken(): string | null {
+  return localStorage.getItem('token');
 }
 
 export function logout(): void {
   localStorage.removeItem('user');
+  localStorage.removeItem('token');
 }

@@ -57,14 +57,18 @@ passwordInput.addEventListener('input', updateButton);
 
 button.addEventListener('click', async () => {
   try {
-    const user = await loginUser({
+    const response = await loginUser({
       login: loginInput.value,
       password: passwordInput.value,
     });
 
-    localStorage.setItem('user', JSON.stringify(user));
+    const user = response.data.user;
+    const token = response.data.access_token;
 
-    window.location.href = '../../pages/animal/index.html';
+    localStorage.setItem('user', JSON.stringify(user));
+    localStorage.setItem('token', token);
+
+    window.location.href = '../../pages/landing/index.html';
   } catch {
     if (errorText) {
       errorText.textContent = 'Incorrect login or password';
