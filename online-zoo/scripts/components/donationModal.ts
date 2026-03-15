@@ -40,8 +40,7 @@ function initStep1Logic(): void {
 
   buttons.forEach((btn) => {
     btn.addEventListener('click', () => {
-
-      buttons.forEach(b => b.classList.remove('active'));
+      buttons.forEach((b) => b.classList.remove('active'));
 
       btn.classList.add('active');
 
@@ -54,7 +53,7 @@ function initStep1Logic(): void {
   otherInput?.addEventListener('input', () => {
     const value = otherInput.value;
 
-    buttons.forEach(b => b.classList.remove('active'));
+    buttons.forEach((b) => b.classList.remove('active'));
 
     if (/^[0-9]+$/.test(value) && Number(value) > 0) {
       selectedAmount = Number(value);
@@ -123,18 +122,18 @@ function renderStep1(): void {
     </div>
   `;
 
-    const petSelect = document.getElementById('petSelect');
+  const petSelect = document.getElementById('petSelect');
 
-    getPets().then((pets) => {
-      if (!petSelect) return;
+  getPets().then((pets) => {
+    if (!petSelect) return;
 
-      pets.forEach((pet) => {
-        const option = document.createElement('option');
-        option.value = pet.name;
-        option.textContent = pet.name;
-        petSelect.appendChild(option);
-      });
+    pets.forEach((pet) => {
+      const option = document.createElement('option');
+      option.value = pet.name;
+      option.textContent = pet.name;
+      petSelect.appendChild(option);
     });
+  });
 
   initStep1Logic();
 }
@@ -195,6 +194,36 @@ function renderStep2(): void {
   `;
 
   initStep2Logic();
+}
+
+function initStep2Logic(): void {
+  const nameInput = document.getElementById('donorName') as HTMLInputElement;
+  const emailInput = document.getElementById('donorEmail') as HTMLInputElement;
+  const next = document.getElementById('step2Next') as HTMLButtonElement;
+
+  function updateButton() {
+    const valid = validateName(nameInput.value) && validateEmail(emailInput.value);
+
+    next.disabled = !valid;
+
+    donorName = nameInput.value;
+    donorEmail = emailInput.value;
+  }
+
+  const back = document.getElementById('step2Back');
+
+  back?.addEventListener('click', () => {
+    showStep(1);
+  });
+
+  nameInput.addEventListener('input', updateButton);
+  emailInput.addEventListener('input', updateButton);
+
+  updateButton();
+
+  next.addEventListener('click', () => {
+    showStep(3);
+  });
 }
 
 export function initDonationModal(): void {
