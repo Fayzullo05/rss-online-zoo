@@ -391,3 +391,48 @@ footer {
     line-height: 130%;
   }
 }
+
+/* header icon */
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.user-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 24px;
+}
+
+.user-icon:hover {
+  scale: 1.2;
+  transition: scale 0.3s ease;
+}
+
+.user-menu {
+  position: absolute;
+  top: 70px;
+  right: 150px;
+  background: rgb(237, 236, 236);
+  border-radius: 6px;
+  padding: 12px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-menu.open {
+  display: flex;
+}
+
+.user-menu a,
+.user-menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
