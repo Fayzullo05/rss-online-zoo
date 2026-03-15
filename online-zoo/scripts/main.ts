@@ -3,6 +3,7 @@ import { renderPets } from './components/pets';
 import { Slider } from './components/slider';
 import { getFeedback } from './services/feedback.service';
 import { renderFeedback } from './components/feedback';
+import { initHeaderAuth } from './components/headerAuth';
 
 async function loadPets(): Promise<void> {
   const loader = document.getElementById('petsLoader');
@@ -58,3 +59,4 @@ async function loadFeedback(): Promise<void> {
 
 loadPets();
 loadFeedback();
+initHeaderAuth();
