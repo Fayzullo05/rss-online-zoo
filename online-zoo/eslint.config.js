@@ -9,12 +9,24 @@ export default [
     ]
   },
 
+  {
+    languageOptions: {
+      globals: {
+        document: "readonly",
+        window: "readonly",
+        navigator: "readonly",
+        localStorage: "readonly",
+        fetch: "readonly"
+      }
+    }
+  },
+
   js.configs.recommended,
   ...tseslint.configs.recommended,
 
   {
     rules: {
-      '@typescript-eslint/no-explicit-any': 'error',
-    },
+      '@typescript-eslint/no-explicit-any': 'error'
+    }
   }
 ];
