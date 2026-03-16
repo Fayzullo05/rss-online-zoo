@@ -25,7 +25,7 @@ async function loadPets(): Promise<void> {
     if (loader) loader.style.display = 'none';
   } catch (error) {
     if (loader) {
-      loader.innerText = 'Something went wrong. Update the page';
+      loader.innerText = `Something went wrong. Update the page. Error: ${error instanceof Error ? error.message : 'Unknown error'}`;
     }
   }
 }
@@ -51,7 +51,7 @@ async function loadFeedback(): Promise<void> {
     if (loader) loader.style.display = 'none';
   } catch (error) {
     if (loader) {
-      loader.innerText = 'Something went wrong. Update the page';
+      loader.innerText = `Something went wrong. Update the page. Error: ${error instanceof Error ? error.message : 'Unknown error'}`;
     }
   }
 }

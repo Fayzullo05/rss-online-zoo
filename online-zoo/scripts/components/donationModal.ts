@@ -3,8 +3,6 @@ import { getUser } from '../utils/auth';
 
 let selectedAmount: number | null = null;
 let selectedPet: string | null = null;
-let donorName = '';
-let donorEmail = '';
 
 function validateName(name: string): boolean {
   return /^[A-Za-z\s]+$/.test(name);
@@ -200,30 +198,28 @@ function initStep2Logic(): void {
   const nameInput = document.getElementById('donorName') as HTMLInputElement;
   const emailInput = document.getElementById('donorEmail') as HTMLInputElement;
   const next = document.getElementById('step2Next') as HTMLButtonElement;
+  const back = document.getElementById('step2Back');
 
   function updateButton() {
-    const valid = validateName(nameInput.value) && validateEmail(emailInput.value);
+    const valid =
+      validateName(nameInput.value) &&
+      validateEmail(emailInput.value);
 
     next.disabled = !valid;
-
-    donorName = nameInput.value;
-    donorEmail = emailInput.value;
   }
 
-  const back = document.getElementById('step2Back');
+  nameInput.addEventListener('input', updateButton);
+  emailInput.addEventListener('input', updateButton);
 
   back?.addEventListener('click', () => {
     showStep(1);
   });
 
-  nameInput.addEventListener('input', updateButton);
-  emailInput.addEventListener('input', updateButton);
-
-  updateButton();
-
   next.addEventListener('click', () => {
     showStep(3);
   });
+
+  updateButton();
 }
 
 export function initDonationModal(): void {
