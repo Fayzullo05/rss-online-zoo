@@ -3,22 +3,19 @@ import tseslint from 'typescript-eslint';
 
 export default [
   {
-    ignores: [
-      'dist/**',
-      'node_modules/**'
-    ]
+    ignores: ['dist/**', 'node_modules/**'],
   },
 
   {
     languageOptions: {
       globals: {
-        document: "readonly",
-        window: "readonly",
-        navigator: "readonly",
-        localStorage: "readonly",
-        fetch: "readonly"
-      }
-    }
+        document: 'readonly',
+        window: 'readonly',
+        navigator: 'readonly',
+        localStorage: 'readonly',
+        fetch: 'readonly',
+      },
+    },
   },
 
   js.configs.recommended,
@@ -26,7 +23,7 @@ export default [
 
   {
     rules: {
-      '@typescript-eslint/no-explicit-any': 'error'
-    }
-  }
+      '@typescript-eslint/no-explicit-any': 'error',
+    },
+  },
 ];

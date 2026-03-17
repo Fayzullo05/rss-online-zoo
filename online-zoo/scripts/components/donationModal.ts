@@ -201,9 +201,7 @@ function initStep2Logic(): void {
   const back = document.getElementById('step2Back');
 
   function updateButton() {
-    const valid =
-      validateName(nameInput.value) &&
-      validateEmail(emailInput.value);
+    const valid = validateName(nameInput.value) && validateEmail(emailInput.value);
 
     next.disabled = !valid;
   }
@@ -217,9 +215,71 @@ function initStep2Logic(): void {
 
   next.addEventListener('click', () => {
     showStep(3);
+    renderStep3();
   });
 
   updateButton();
+}
+
+function renderStep3(): void {
+  const step3 = document.getElementById('donationStep3');
+  if (!step3) return;
+
+  const user = getUser();
+
+  step3.innerHTML = `
+    <div class="donation-step">
+
+      <p class="donation-info">Payment Information:</p>
+
+      <div class="card-row">
+        <label class="donation-field">
+          <span>* Credit Card Number</span>
+          <input id="cardNumber" type="text" placeholder="1234 5678 9012 3456" maxlength="19">
+        </label>
+
+        <label class="donation-field">
+          <span>* CVV Number</span>
+          <input id="cvv" type="text" maxlength="3">
+        </label>
+      </div>
+
+      <label class="donation-field">
+        <span>* Expiration Date</span>
+        <input id="expDate" type="text" placeholder="MM/YY" maxlength="5">
+      </label>
+
+      ${
+        user
+          ? `
+        <label class="donation-checkbox">
+          <input type="checkbox">
+          Save card info for future donations
+        </label>
+      `
+          : ''
+      }
+
+      <div class="donation-footer">
+
+        <div class="donation-steps">
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+        </div>
+
+        <button id="step3Back" class="back-btn">Back</button>
+
+        <button id="completeDonation" disabled>
+          COMPLETE DONATION →
+        </button>
+
+      </div>
+
+    </div>
+  `;
+
+  initStep3Logic();
 }
 
 export function initDonationModal(): void {

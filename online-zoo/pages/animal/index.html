@@ -195,7 +195,7 @@
             </div>
             <div class="donation-action">
               <p>Quick Donate</p>
-              <button class="donation-button">
+              <button class="donation-button" id="openDonationModal">
                 <span class="donation-text-part">$ Donation amount</span>
                 <span class="donation-arrow">
                   <img src="../../assets/contact/button-arrow.svg" alt="Arrow" />
@@ -277,6 +277,18 @@
         <button class="map-close" id="mapClose"></button>
 
         <div id="map"></div>
+      </div>
+    </div>
+    <div id="donationModalMain" class="donation-modal-main">
+      <div class="donation-content">
+        <div class="donation-header">
+          <div class="donation-title">MAKE YOUR DONATION</div>
+          <button id="donationClose" class="donation-close"></button>
+        </div>
+
+        <div id="donationStep1"></div>
+        <div id="donationStep2"></div>
+        <div id="donationStep3"></div>
       </div>
     </div>
     <script src="../popups/popupsimple.js"></script>
