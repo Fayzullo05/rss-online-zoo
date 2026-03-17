@@ -1444,8 +1444,8 @@ footer {
   font-size: 20px;
 }
 
-#donationStep2 {
-  padding: 40px 80px;
+#donationStep1,#donationStep2, #donationStep3 {
+  padding: 0 80px 40px 80px;
 }
 
 .donation-step {
@@ -1507,7 +1507,7 @@ footer {
   gap: 20px;
 }
 
-#step2Next {
+#step2Next, #completeDonation {
   margin: 0;
   width: 150px;
   height: 74px;
@@ -1522,12 +1522,34 @@ footer {
   cursor: pointer;
 }
 
-#step2Next:hover:enabled {
+#step2Next:hover:enabled, #completeDonation:hover:enabled {
   background: #05786e;
   transition: background-color 0.3s ease;
 }
 
-#step2Next:disabled {
+#step2Next:disabled, #completeDonation:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+#completeDonation {
+  font-size: 18px;
+  width: 250px;
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 20px;
+}
+
+#cardNumber,
+#cvv,
+#expMonth,
+#expYear {
+  height: 60px;
+  padding: 0 16px;
+  font-size: 18px;
+  border: 1px solid #20113d;
+  border-radius: 5px;
 }
