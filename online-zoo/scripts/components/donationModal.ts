@@ -251,12 +251,10 @@ function renderStep3(): void {
 
       ${
         user
-          ? `
-        <label class="donation-checkbox">
-          <input type="checkbox">
-          Save card info for future donations
-        </label>
-      `
+          ? `<label class="donation-checkbox">
+              <input type="checkbox">
+              Save card info for future donations
+            </label>`
           : ''
       }
 
@@ -280,6 +278,69 @@ function renderStep3(): void {
   `;
 
   initStep3Logic();
+}
+
+function initStep3Logic(): void {
+  const cardInput = document.getElementById('cardNumber') as HTMLInputElement;
+  const cvvInput = document.getElementById('cvv') as HTMLInputElement;
+  const expInput = document.getElementById('expDate') as HTMLInputElement;
+  const submit = document.getElementById('completeDonation') as HTMLButtonElement;
+  const back = document.getElementById('step3Back');
+
+  cardInput.addEventListener('input', () => {
+    let value = cardInput.value.replace(/\D/g, '');
+    value = value.slice(0, 16);
+    value = value.replace(/(.{4})/g, '$1 ').trim();
+    cardInput.value = value;
+
+    validate();
+  });
+
+  cvvInput.addEventListener('input', () => {
+    cvvInput.value = cvvInput.value.replace(/\D/g, '').slice(0, 3);
+    validate();
+  });
+
+  expInput.addEventListener('input', () => {
+    let value = expInput.value.replace(/\D/g, '');
+
+    if (value.length >= 3) {
+      value = value.slice(0, 4);
+      value = value.replace(/(\d{2})(\d{1,2})/, '$1/$2');
+    }
+
+    expInput.value = value;
+
+    validate();
+  });
+
+  function validateExpiry(value: string): boolean {
+    if (!/^\d{2}\/\d{2}$/.test(value)) return false;
+
+    const [month, year] = value.split('/').map(Number);
+
+    if (month < 1 || month > 12) return false;
+
+    const now = new Date();
+    const currentYear = now.getFullYear() % 100;
+    const currentMonth = now.getMonth() + 1;
+
+    return year > currentYear || (year === currentYear && month >= currentMonth);
+  }
+
+  function validate() {
+    const cardValid = /^\d{16}$/.test(cardInput.value.replace(/\s/g, ''));
+    const cvvValid = /^\d{3}$/.test(cvvInput.value);
+    const expValid = validateExpiry(expInput.value);
+
+    submit.disabled = !(cardValid && cvvValid && expValid);
+  }
+
+  back?.addEventListener('click', () => {
+    showStep(2);
+  });
+
+  validate();
 }
 
 export function initDonationModal(): void {
