@@ -1,0 +1,6 @@
+cd online-zoo
+echo "Start typecheck"
+npm run types
+
+echo "Start build"
+npm run build

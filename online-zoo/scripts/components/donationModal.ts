@@ -232,19 +232,27 @@ function renderStep3(): void {
     <div class="donation-step">
 
       <p class="donation-info">Payment Information:</p>
-      ${savedCards.length ? `
+      ${
+        savedCards.length
+          ? `
         <label class="donation-field">
           <span>Saved cards</span>
           <select id="savedCards">
             <option value="">Select saved card</option>
-            ${savedCards.map((c: { number: string; cvv: string; exp: string }, i: number) => `
+            ${savedCards
+              .map(
+                (c: { number: string; cvv: string; exp: string }, i: number) => `
               <option value="${i}">
-                ${c.number.slice(0,4)} **** **** ${c.number.slice(-4)}
+                ${c.number.slice(0, 4)} **** **** ${c.number.slice(-4)}
               </option>
-            `).join('')}
+            `
+              )
+              .join('')}
           </select>
         </label>
-      ` : ''}
+      `
+          : ''
+      }
 
       <div class="card-row">
         <label class="donation-field">
@@ -407,12 +415,8 @@ function initStep3Logic(): void {
         `Thank you for your donation of $${selectedAmount} to ${selectedPet}!`,
         'success'
       );
-
     } catch {
-      showNotification(
-        'Something went wrong. Please, try again later.',
-        'error'
-      );
+      showNotification('Something went wrong. Please, try again later.', 'error');
     }
   });
 }
