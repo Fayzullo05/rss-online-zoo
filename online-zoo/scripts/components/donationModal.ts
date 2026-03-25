@@ -226,11 +226,25 @@ function renderStep3(): void {
   if (!step3) return;
 
   const user = getUser();
+  const savedCards = getSavedCards();
 
   step3.innerHTML = `
     <div class="donation-step">
 
       <p class="donation-info">Payment Information:</p>
+      ${savedCards.length ? `
+        <label class="donation-field">
+          <span>Saved cards</span>
+          <select id="savedCards">
+            <option value="">Select saved card</option>
+            ${savedCards.map((c: { number: string; cvv: string; exp: string }, i: number) => `
+              <option value="${i}">
+                ${c.number.slice(0,4)} **** **** ${c.number.slice(-4)}
+              </option>
+            `).join('')}
+          </select>
+        </label>
+      ` : ''}
 
       <div class="card-row">
         <label class="donation-field">
@@ -252,7 +266,7 @@ function renderStep3(): void {
       ${
         user
           ? `<label class="donation-checkbox">
-              <input type="checkbox">
+              <input type="checkbox" id="saveCard">
               Save card info for future donations
             </label>`
           : ''
@@ -286,6 +300,21 @@ function initStep3Logic(): void {
   const expInput = document.getElementById('expDate') as HTMLInputElement;
   const submit = document.getElementById('completeDonation') as HTMLButtonElement;
   const back = document.getElementById('step3Back');
+
+  const savedCards = getSavedCards();
+  const savedSelect = document.getElementById('savedCards') as HTMLSelectElement;
+
+  savedSelect?.addEventListener('change', () => {
+    const card = savedCards[savedSelect.value];
+
+    if (!card) return;
+
+    cardInput.value = card.number;
+    cvvInput.value = card.cvv;
+    expInput.value = card.exp;
+
+    validate();
+  });
 
   cardInput.addEventListener('input', () => {
     let value = cardInput.value.replace(/\D/g, '');
@@ -341,6 +370,80 @@ function initStep3Logic(): void {
   });
 
   validate();
+
+  submit.addEventListener('click', async () => {
+    try {
+      const user = getUser();
+      const saveCheckbox = document.querySelector('#saveCard') as HTMLInputElement;
+
+      const name = user?.name || 'Anonymous';
+      const email = user?.email || 'test@mail.com';
+
+      const response = await fetch(
+        'https://vsqsnqnxkh.execute-api.eu-central-1.amazonaws.com/prod/donations',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name,
+            email,
+            amount: selectedAmount,
+            petId: 1,
+          }),
+        }
+      );
+
+      if (saveCheckbox?.checked) {
+        saveCard({
+          number: cardInput.value,
+          cvv: cvvInput.value,
+          exp: expInput.value,
+        });
+      }
+
+      if (!response.ok) throw new Error();
+
+      showNotification(
+        `Thank you for your donation of $${selectedAmount} to ${selectedPet}!`,
+        'success'
+      );
+
+    } catch {
+      showNotification(
+        'Something went wrong. Please, try again later.',
+        'error'
+      );
+    }
+  });
+}
+
+function showNotification(message: string, type: 'success' | 'error'): void {
+  const div = document.createElement('div');
+  div.className = `donation-notification ${type}`;
+  div.textContent = message;
+
+  document.body.appendChild(div);
+
+  setTimeout(() => div.remove(), 4000);
+}
+
+function getSavedCards() {
+  const user = getUser();
+  if (!user) return [];
+
+  return JSON.parse(localStorage.getItem(`cards_${user.email}`) || '[]');
+}
+
+function saveCard(card: { number: string; cvv: string; exp: string }) {
+  const user = getUser();
+  if (!user) return;
+
+  const key = `cards_${user.email}`;
+  const existing = getSavedCards();
+
+  existing.push(card);
+
+  localStorage.setItem(key, JSON.stringify(existing));
 }
 
 export function initDonationModal(): void {

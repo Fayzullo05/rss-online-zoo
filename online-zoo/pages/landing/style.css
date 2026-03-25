@@ -1388,12 +1388,13 @@ footer {
   font-size: 28px;
   line-height: 130%;
   color: #000000;
+  z-index: 5;
 }
 
 .donation-checkbox input {
   width: 30px;
   height: 30px;
-  appearance: none;
+  appearance: auto;
   border: 1px solid #20113d;
   background: #ffffff;
   cursor: pointer;
@@ -1404,6 +1405,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   position: relative;
+  z-index: 1;
 }
 
 #step1Next {
@@ -1454,6 +1456,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  z-index: 3;
 }
 
 .donation-field {
@@ -1557,4 +1560,42 @@ footer {
   font-size: 18px;
   border: 1px solid #20113d;
   border-radius: 5px;
+}
+
+.donation-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 16px 24px;
+  border-radius: 6px;
+  color: #fff;
+  z-index: 1111;
+}
+
+.donation-notification.success {
+  background: #00a092;
+}
+
+.donation-notification.error {
+  background: #e74c3c;
+}
+
+.donation-checkbox input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+#savedCards {
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  font-size: 18px;
+
+  border: 1px solid #05786e;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
 }
