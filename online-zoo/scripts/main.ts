@@ -1,6 +1,7 @@
 import { initHeaderAuth } from './components/headerAuth';
 import { initDonationModal } from './components/donationModal';
 import { renderHeader } from './components/header';
+import { applyTheme, getTheme } from './utils/theme';
 
 const getActivePage = (): string => {
   const path = window.location.pathname;
@@ -21,3 +22,4 @@ if (headerContainer) {
 }
 
 initDonationModal();
+applyTheme(getTheme());

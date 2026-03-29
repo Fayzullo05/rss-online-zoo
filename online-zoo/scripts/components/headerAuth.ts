@@ -1,4 +1,5 @@
 import { getUser, logout } from '../utils/auth';
+import { getTheme, toggleTheme } from '../utils/theme';
 
 export function initHeaderAuth(): void {
   const user = getUser();
@@ -39,4 +40,19 @@ export function initHeaderAuth(): void {
       });
     }
   });
+
+  const themeButton = document.getElementById('themeToggle');
+
+  if (themeButton) {
+    const updateIcon = () => {
+      themeButton.textContent = getTheme() === 'dark' ? '☀️' : '🌙';
+    };
+
+    updateIcon();
+
+    themeButton.addEventListener('click', () => {
+      toggleTheme();
+      updateIcon();
+    });
+  }
 }

@@ -1,0 +1,36 @@
+:root {
+  /* base */
+  --bg-color: #ffffff;
+  --text-color: #000000;
+
+  /* brand */
+  --primary: #f58021;
+  --accent: #00a092;
+
+  /* sections */
+  --dark-section: #20113d;
+  --header-bg: #f58021;
+
+  /* cards */
+  --card-bg: #ffffff;
+  --card-dark: #20113d;
+
+  /* borders */
+  --border-dark: #20113d;
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #eaeaea;
+
+  --primary: #f58021;
+  --accent: #00a092;
+
+  --dark-section: #0f0a1f;
+  --header-bg: #1e1e1e;
+
+  --card-bg: #1f1f1f;
+  --card-dark: #2a2a2a;
+
+  --border-dark: #444;
+}

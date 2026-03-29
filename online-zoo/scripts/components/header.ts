@@ -39,6 +39,7 @@ export const renderHeader = (activePage: string) => {
       </div>
 
       <div class="user-menu" id="userMenu"></div>
+      <button id="themeToggle" class="theme-btn">🌙</button>
     </header>
   `;
 };

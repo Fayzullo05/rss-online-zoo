@@ -7,6 +7,8 @@
 }
 html,
 body {
+  background: var(--bg-color);
+  color: var(--text-color);
   overflow-x: hidden;
 }
 :root {
@@ -21,17 +23,17 @@ a {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: var(--bg-color);
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
 }
 header {
   width: 100%;
   max-width: 1920px;
   height: 110px;
-  background-color: #f58021;
+  background-color: var(--header-bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,7 +122,7 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #000000;
+  color: var(--text-color);
   max-width: 430px;
   margin-top: 50px;
 }
@@ -180,7 +182,7 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #000000;
+  color: var(--text-color);
 }
 .welcome-first-text,
 .welcome-second-text {
@@ -195,8 +197,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 150px;
-  background-color: #20113d;
-  background: #20113d;
+  background-color: var(--dark-section);
   padding: 50px min(260px, 13.55%);
   color: #ffffff;
 }
@@ -274,7 +275,7 @@ header {
 /* section pets */
 
 .main-pets {
-  background: #ffffff;
+  background: var(--bg-color);
   padding-top: min(136px, 7.04%);
   padding-bottom: min(150px, 7.77%);
 }
@@ -299,7 +300,7 @@ header {
   font-weight: 500;
   font-size: 26px;
   line-height: 130%;
-  color: #000000;
+  color: var(--text-color);
 }
 .pets-arrows {
   margin-top: 50px;
@@ -313,7 +314,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 19px 18px;
-  border: 1px solid #20113d;
+  border: 1px solid var(--border-dark);
   border-radius: 5px;
   background-color: transparent;
 }
@@ -343,7 +344,7 @@ header {
   transition: transform 0.4s ease;
 }
 .pet-card {
-  background: #20113d;
+  background: var(--card-dark);
   border-radius: 5px;
   overflow: hidden;
   display: flex;
@@ -364,7 +365,7 @@ header {
   position: absolute;
   top: 0px;
   left: 0px;
-  background: #20113d;
+  background: var(--dark-section);
   color: white;
   padding: 12px 19px;
   font-size: 26px;
@@ -444,7 +445,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 26px 45px;
-  border: 1px solid #20113d;
+  border: 1px solid var(--border-dark);
   border-radius: 5px;
   font-weight: 600;
   font-size: 18px;
@@ -477,7 +478,7 @@ header {
 /* section pay and feed */
 
 .feed-container {
-  background: #20113d;
+  background: var(--dark-section);
   padding: 90px min(260px, 13.55%);
   color: white;
 }
@@ -585,7 +586,6 @@ header {
 /* section feedback */
 .main-feedback {
   color: white;
-  background-color: #20113d;
   background:
     linear-gradient(177.34deg, #20113d 7.26%, rgba(32, 17, 61, 0) 14.89%),
     linear-gradient(144.77deg, #20113d 18.53%, rgba(32, 17, 61, 0) 46.43%),
@@ -631,14 +631,14 @@ header {
   transition: transform 0.4s ease;
 }
 .feedback-card {
-  background: #ffffff;
+  background: var(--card-bg);
   border-radius: 5px;
   position: relative;
   padding: 136px 50px 60px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: #000000;
+  color: var(--text-color);
   width: 100%;
 }
 .feedback-card h3 {
@@ -730,7 +730,7 @@ header {
   font-size: 26px;
   line-height: 130%;
   text-align: center;
-  color: #20113d;
+  color: var(--text-color);
   max-width: 537px;
   align-self: center;
 }
@@ -743,7 +743,7 @@ header {
   grid-column: span 2;
 }
 .favourite-card {
-  background: #20113d;
+  background: var(--dark-section);
   border-radius: 6px;
   overflow: hidden;
   display: flex;
@@ -790,7 +790,7 @@ header {
   height: 74px;
   gap: 10px;
 
-  border: 1px solid #20113d;
+  border: 1px solid var(--border-dark);
   border-radius: 5px;
   background: transparent;
 
@@ -798,7 +798,7 @@ header {
   font-size: 1rem;
   line-height: 22px;
   text-transform: uppercase;
-  color: #20113d;
+  color: var(--text-color);
 }
 .second-arrow {
   display: none;
@@ -811,7 +811,7 @@ header {
 }
 .favourite-button:hover,
 .favourite-button:active {
-  background: #20113d;
+  background: var(--dark-section);
   color: #ffffff;
   transition: background 0.3s ease;
 }
@@ -822,7 +822,7 @@ header {
 
 /* Footer */
 footer {
-  background: #20113d;
+  background: var(--dark-section);
   padding-left: min(260px, 13.55%);
   padding-top: clamp(44px, 4.27%, 82px);
   padding-bottom: clamp(16px, 2.3%, 44px);
@@ -1237,7 +1237,7 @@ footer {
 .donation-modal-main .donation-content {
   width: min(920px, 92vw);
   max-width: 90%;
-  background: #ffffff;
+  background: var(--card-bg);
   border-radius: 5px;
   overflow: hidden;
   position: relative;
@@ -1261,7 +1261,7 @@ footer {
   content: '\00d7';
   font-size: 34px;
   line-height: 1;
-  color: #000000;
+  color: var(--text-color)
 }
 
 .donation-header {
@@ -1292,7 +1292,7 @@ footer {
   font-weight: 500;
   font-size: 26px;
   line-height: 130%;
-  color: #000000;
+  color: var(--text-color);
 }
 
 .donation-label {
@@ -1300,7 +1300,7 @@ footer {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #000000;
+  color: var(--text-color);
 }
 
 #donationStep1 .amounts {
@@ -1355,14 +1355,14 @@ footer {
 #petSelect {
   width: 100%;
   height: 74px;
-  border: 1px solid #20113d;
+  border: 1px solid var(--border-dark);
   border-radius: 5px;
-  background: #ffffff;
+  background: var(--card-bg);
   padding: 0 22px;
   font-weight: 400;
   font-size: 26px;
   line-height: 130%;
-  color: #000000;
+  color: var(--text-color);
 }
 
 #otherAmount::placeholder {
@@ -1374,7 +1374,7 @@ footer {
   width: 100%;
   height: 74px;
   padding: 0 22px;
-  border: 1px solid #20113d;
+  border: 1px solid var(--border-dark);
   border-radius: 5px;
   font-size: 26px;
 }
@@ -1387,7 +1387,7 @@ footer {
   font-weight: 400;
   font-size: 28px;
   line-height: 130%;
-  color: #000000;
+  color: var(--text-color);
   z-index: 5;
 }
 
@@ -1395,8 +1395,8 @@ footer {
   width: 30px;
   height: 30px;
   appearance: auto;
-  border: 1px solid #20113d;
-  background: #ffffff;
+  border: 1px solid var(--border-dark);
+  background: var(--card-bg);
   cursor: pointer;
 }
 
@@ -1558,7 +1558,7 @@ footer {
   height: 60px;
   padding: 0 16px;
   font-size: 18px;
-  border: 1px solid #20113d;
+  border: 1px solid var(--border-dark);
   border-radius: 5px;
 }
 
