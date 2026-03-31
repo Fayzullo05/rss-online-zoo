@@ -21,19 +21,19 @@ a {
 }
 
 .container {
-  background-color: #ffffff;
+  background-color: var(--bg-color);
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
 }
 
 header {
   width: 100%;
   max-width: 1920px;
   height: 110px;
-  background-color: #f58021;
+  background-color: var(--header-bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +61,7 @@ header {
 
 .header-nav a.active,
 .header-nav a:hover {
-  color: #00a092;
+  color: var(--accent);
   transition: color 0.3s ease;
 }
 
@@ -86,7 +86,7 @@ header {
 .burger span {
   width: 30px;
   height: 2px;
-  background: #000000;
+  background: var(--text-color);
 }
 
 /* Main */
@@ -104,8 +104,8 @@ header {
 /* Sidebar */
 
 .sidebar {
-  background: #20113d;
-  color: white;
+  background: var(--dark-section);
+  color: var(--text-color);
   position: sticky;
   top: 110px;
   transition: width 0.3s ease;
@@ -159,7 +159,7 @@ header {
   padding: 30px 20px;
   cursor: pointer;
 
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid var(--border-light);
   transition: background 0.3s ease;
 }
 
@@ -257,7 +257,7 @@ header {
   flex: 1;
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: var(--bg-color);
   min-height: calc(100vh - 110px);
 }
 
@@ -280,7 +280,7 @@ header {
   font-size: 54px;
   line-height: 66px;
   text-transform: uppercase;
-  color: #00a092;
+  color: var(--accent);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -294,7 +294,7 @@ header {
   padding: 26px 34px;
   gap: 10px;
   width: 240px;
-  background: #f58021;
+  background: var(--primary);
   border-radius: 5px;
   border: none;
   color: #ffffff;
@@ -308,7 +308,7 @@ header {
 
 .donate-button:hover {
   transition: background 0.3s ease;
-  background: #d96d10;
+  background: var(--primary-hover);
 }
 
 .video-player {
@@ -451,7 +451,7 @@ header {
   gap: 4px;
   font-weight: 400;
   font-size: 20px;
-  color: #f58021;
+  color: var(--primary);
 }
 
 .live-label b {
@@ -472,7 +472,7 @@ header {
   font-size: clamp(32px, calc(1.39vw + 15.3px), 42px);
   line-height: 51px;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--text-color);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -576,8 +576,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 150px;
-  background-color: #20113d;
-  background: #20113d;
+  background-color: var(--dark-section);
   padding: 50px min(260px, 13.55%);
   color: #ffffff;
 }
@@ -672,7 +671,7 @@ header {
   max-width: 1040px;
   margin: 0 auto 147px;
   padding: 50px 60px;
-  background: #ffffff;
+  background: var(--card-bg);
   text-align: center;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -687,7 +686,7 @@ header {
   line-height: 51px;
   text-align: center;
   text-transform: uppercase;
-  color: #00a092;
+  color: var(--accent);
 }
 
 .info-card p {
@@ -695,7 +694,7 @@ header {
   font-size: 26px;
   line-height: 130%;
   text-align: center;
-  color: #000000;
+  color: var(--text-color);
 }
 
 .info-main {
@@ -712,13 +711,14 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
+  color: var(--text-color);
 }
 
 .info-details strong {
   font-weight: 600;
   font-size: 26px;
   line-height: 130%;
-  color: #000000;
+  color: var(--text-color);
   margin-right: 20px;
 }
 
@@ -727,6 +727,7 @@ header {
   border: none;
   margin-left: 16px;
   padding: 25px 45px;
+  color: var(--text-color);
 }
 
 .info-details button a {
@@ -779,6 +780,7 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
+  color: var(--text-color);
 }
 
 /* Footer */
@@ -1433,7 +1435,7 @@ footer {
   width: 80%;
   max-width: 900px;
   height: 500px;
-  background: white;
+  background: var(--card-bg);
   position: relative;
   border-radius: 5px;
 }
@@ -1506,12 +1508,13 @@ footer {
   position: absolute;
   top: 70px;
   right: 150px;
-  background: rgb(237, 236, 236);
+  background: var(--card-bg);
   border-radius: 6px;
   padding: 12px;
   display: none;
   flex-direction: column;
   gap: 10px;
+  color: var(--text-color);
 }
 
 .user-menu.open {

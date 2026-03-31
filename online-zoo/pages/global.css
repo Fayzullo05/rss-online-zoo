@@ -16,7 +16,11 @@
   --card-dark: #20113d;
 
   /* borders */
+  --border-light: #ffffff;
   --border-dark: #20113d;
+
+  /* hover */
+  --primary-hover: #d96d10;
 }
 
 [data-theme='dark'] {
@@ -32,5 +36,8 @@
   --card-bg: #1f1f1f;
   --card-dark: #2a2a2a;
 
+  --border-light: #20113d;
   --border-dark: #444;
+
+  --primary-hover: #d96d10;
 }
