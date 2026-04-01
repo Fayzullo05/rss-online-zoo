@@ -3,6 +3,7 @@ import { renderPets } from './components/pets';
 import { Slider } from './components/slider';
 import { getFeedback } from './services/feedback.service';
 import { renderFeedback } from './components/feedback';
+import { initLazyImages } from './utils/lazy';
 
 async function loadPets(): Promise<void> {
   const loader = document.getElementById('petsLoader');
@@ -13,6 +14,7 @@ async function loadPets(): Promise<void> {
     const pets = await getPets();
 
     renderPets(pets);
+    initLazyImages();
 
     const prevButton = document.getElementById('leftArrow');
     const nextButton = document.getElementById('rightArrow');
@@ -40,6 +42,7 @@ async function loadFeedback(): Promise<void> {
     const feedback = await getFeedback();
 
     renderFeedback(feedback);
+    initLazyImages();
 
     const prev = document.getElementById('feedbackLeftArrow');
     const next = document.getElementById('feedbackRightArrow');

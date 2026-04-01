@@ -26,7 +26,7 @@ export function renderPets(pets: Pet[]): void {
 
     card.innerHTML = `
       <div class="pet-image">
-        <img src="../../assets/landing/${image}" alt="${pet.commonName}">
+        <img data-src="../../assets/landing/${image}" alt="${pet.commonName}" class="lazy-img" />
         <span class="pet-name">${pet.name}</span>
       </div>
 
