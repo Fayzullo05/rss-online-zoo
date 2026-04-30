@@ -7,6 +7,8 @@
 }
 html,
 body {
+  background: var(--bg-color);
+  color: var(--text-color);
   overflow-x: hidden;
 }
 :root {
@@ -21,17 +23,17 @@ a {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: var(--bg-color);
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
 }
 header {
   width: 100%;
   max-width: 1920px;
   height: 110px;
-  background-color: #f58021;
+  background-color: var(--header-bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +56,7 @@ header {
 }
 .header-nav a.active,
 .header-nav a:hover {
-  color: #00a092;
+  color: var(--accent);
   transition: color 0.3s ease;
 }
 .header-social {
@@ -76,7 +78,7 @@ header {
 .burger span {
   width: 30px;
   height: 2px;
-  background: #000000;
+  background: var(--text-color);
 }
 
 /* Main */
@@ -97,7 +99,7 @@ header {
   line-height: 66px;
   text-align: center;
   text-transform: uppercase;
-  color: #20113d;
+  color: var(--accent);
 }
 .map {
   position: relative;
@@ -183,7 +185,8 @@ header {
 }
 /* Footer */
 footer {
-  background: #20113d;
+  background: var(--dark-section);
+  color: #ffffff;
   padding-left: min(260px, 13.55%);
   padding-top: clamp(44px, 4.27%, 82px);
   padding-bottom: clamp(16px, 2.3%, 44px);
@@ -206,8 +209,9 @@ footer {
 .footer-nav a {
   color: #ffffff;
 }
-.footer-nav a:hover {
-  color: #00a092;
+.footer-nav a:hover,
+.footer-nav a.active {
+  color: var(--accent);
   transition: color 0.3s ease;
 }
 .footer-logos {
@@ -224,7 +228,7 @@ footer {
   height: 74px;
   gap: 10px;
 
-  border: 1px solid #ffffff;
+  border: 1px solid var(--border-light);
   border-radius: 5px;
   background: transparent;
 
@@ -238,14 +242,14 @@ footer {
 }
 .footer-button:hover,
 .footer-button:active {
-  background: #00a092;
+  background: var(--accent);
   transition: background 0.3s ease;
 }
 .footer-line {
   width: 100%;
   max-width: 1400px;
   height: 0px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--border-light);
   margin-top: 80px;
 }
 .footer-author-social {
@@ -423,6 +427,11 @@ footer {
   display: none;
   flex-direction: column;
   gap: 10px;
+}
+
+[data-theme='dark'] .user-menu {
+  background: var(--card-dark);
+  color: var(--text-color);
 }
 
 .user-menu.open {

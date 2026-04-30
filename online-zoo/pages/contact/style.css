@@ -7,6 +7,8 @@
 }
 html,
 body {
+  background: var(--bg-color);
+  color: var(--text-color);
   overflow-x: hidden;
 }
 :root {
@@ -21,17 +23,17 @@ a {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: var(--bg-color);
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
 }
 header {
   width: 100%;
   max-width: 1920px;
   height: 110px;
-  background-color: #f58021;
+  background-color: var(--header-bg);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +56,7 @@ header {
 }
 .header-nav a.active,
 .header-nav a:hover {
-  color: #00a092;
+  color: var(--accent);
   transition: color 0.3s ease;
 }
 .header-social {
@@ -76,11 +78,12 @@ header {
 .burger span {
   width: 30px;
   height: 2px;
-  background: #000000;
+  background: var(--text-color);
 }
 main {
   padding-left: min(260px, 13.55%);
   padding-right: min(260px, 13.55%);
+  background-color: var(--bg-color);
 }
 .main-image {
   width: 100%;
@@ -103,7 +106,7 @@ main {
   font-size: 3rem;
   line-height: 66px;
   text-transform: uppercase;
-  color: #00a092;
+  color: var(--accent);
 }
 
 .main-content-description {
@@ -113,7 +116,7 @@ main {
   line-height: 150%;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: var(--text-color);
   margin-top: 50px;
 }
 .main-content-form {
@@ -125,12 +128,12 @@ main {
   gap: 10px;
 }
 .star {
-  color: #00a092;
+  color: var(--accent);
 }
 input,
 textarea {
   width: 100%;
-  border: 1px solid #000000;
+  border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
   font-family: 'Montserrat';
@@ -138,19 +141,41 @@ textarea {
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
-  color: #969696;
+  background: #ffffff;
+  color: #000;
   margin-bottom: 20px;
   outline: none;
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+[data-theme='dark'] input,
+[data-theme='dark'] textarea {
+  background: var(--card-dark);
+  color: var(--text-color);
+  border-color: #555;
+  caret-color: var(--accent);
+}
+
+[data-theme='dark'] input::placeholder,
+[data-theme='dark'] textarea::placeholder {
+  color: #aaa;
 }
 input:focus,
 textarea:focus {
-  border-color: #00a092;
+  border-color: var(--accent);
   box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
 }
 input:invalid:not(:placeholder-shown),
 textarea:invalid:not(:placeholder-shown) {
   background: rgba(245, 128, 33, 0.2);
-  border: 1px solid #f58021;
+  border: 1px solid var(--primary);
 }
 textarea {
   height: 200px;
@@ -163,7 +188,7 @@ textarea {
   color: #ffffff;
   padding: 26px 45px;
   gap: 10px;
-  background: #00a092;
+  background: var(--accent);
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
@@ -178,7 +203,8 @@ textarea {
   transition: background 0.3s ease;
 }
 footer {
-  background: #20113d;
+  background: var(--dark-section);
+  color: #ffffff;
   padding-left: min(260px, 13.55%);
   padding-top: clamp(44px, 4.27%, 82px);
   padding-bottom: clamp(16px, 2.3%, 44px);
@@ -201,8 +227,9 @@ footer {
 .footer-nav a {
   color: #ffffff;
 }
-.footer-nav a:hover {
-  color: #00a092;
+.footer-nav a:hover,
+.footer-nav a.active {
+  color: var(--accent);
   transition: color 0.3s ease;
 }
 .footer-logos {
@@ -219,7 +246,7 @@ footer {
   height: 74px;
   gap: 10px;
 
-  border: 1px solid #ffffff;
+  border: 1px solid var(--border-light);
   border-radius: 5px;
   background: transparent;
 
@@ -233,14 +260,14 @@ footer {
 }
 .footer-button:hover,
 .footer-button:active {
-  background: #00a092;
+  background: var(--accent);
   transition: background 0.3s ease;
 }
 .footer-line {
   width: 100%;
   max-width: 1400px;
   height: 0px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--border-light);
   margin-top: 80px;
 }
 .footer-author-social {
@@ -494,6 +521,11 @@ footer {
   display: none;
   flex-direction: column;
   gap: 10px;
+}
+
+[data-theme='dark'] .user-menu {
+  background: var(--card-dark);
+  color: var(--text-color);
 }
 
 .user-menu.open {
