@@ -41,3 +41,33 @@
 
   --primary-hover: #d96d10;
 }
+
+/* skeleton*/
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #e0e0e0;
+}
+
+.skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+[data-theme='dark'] .skeleton {
+  background: #2a2a2a;
+}
+
+[data-theme='dark'] .skeleton::after {
+  background: linear-gradient(90deg, transparent, rgba(247, 247, 247, 0.1), transparent);
+}

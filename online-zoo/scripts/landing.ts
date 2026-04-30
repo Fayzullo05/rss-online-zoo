@@ -1,8 +1,8 @@
 import { getPets } from './services/pets.service';
-import { renderPets } from './components/pets';
+import { renderPets, renderPetsSkeleton } from './components/pets';
 import { Slider } from './components/slider';
 import { getFeedback } from './services/feedback.service';
-import { renderFeedback } from './components/feedback';
+import { renderFeedback, renderFeedbackSkeleton } from './components/feedback';
 import { initLazyImages } from './utils/lazy';
 
 async function loadPets(): Promise<void> {
@@ -10,6 +10,8 @@ async function loadPets(): Promise<void> {
 
   try {
     if (loader) loader.style.display = 'block';
+
+    renderPetsSkeleton();
 
     const pets = await getPets();
 
@@ -38,6 +40,8 @@ async function loadFeedback(): Promise<void> {
 
   try {
     if (loader) loader.style.display = 'block';
+
+    renderFeedbackSkeleton();
 
     const feedback = await getFeedback();
 

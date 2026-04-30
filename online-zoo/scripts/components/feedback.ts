@@ -1,5 +1,25 @@
 import type { Feedback } from '../types/feedback.interface';
 
+export function renderFeedbackSkeleton(): void {
+  const container = document.getElementById('feedbackCards');
+  if (!container) return;
+
+  container.innerHTML = '';
+
+  for (let i = 0; i < 3; i++) {
+    const card = document.createElement('div');
+    card.className = 'feedback-card';
+
+    card.innerHTML = `
+      <div class="skeleton" style="height: 20px; width: 50%; margin-bottom: 10px;"></div>
+      <div class="skeleton" style="height: 14px; width: 100%; margin-bottom: 6px;"></div>
+      <div class="skeleton" style="height: 14px; width: 90%;"></div>
+    `;
+
+    container.appendChild(card);
+  }
+}
+
 export function renderFeedback(feedback: Feedback[]): void {
   const container = document.getElementById('feedbackCards');
 
