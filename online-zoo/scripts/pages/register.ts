@@ -1,4 +1,32 @@
 import { registerUser } from '../services/auth.service';
+import { renderHeader } from '../components/header';
+import { applyTheme, getTheme, toggleTheme } from '../utils/theme';
+
+// Initialize header and theme
+const headerContainer = document.getElementById('headerContainer');
+if (headerContainer) {
+  headerContainer.innerHTML = renderHeader('');
+}
+
+// Apply theme from localStorage
+applyTheme(getTheme());
+
+// Initialize theme toggle button
+const themeToggle = document.getElementById('themeToggle');
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    toggleTheme();
+    updateThemeIcon();
+  });
+  updateThemeIcon();
+}
+
+function updateThemeIcon(): void {
+  const currentTheme = getTheme();
+  if (themeToggle) {
+    themeToggle.textContent = currentTheme === 'light' ? '🌙' : '☀️';
+  }
+}
 
 const loginInput = document.getElementById('login') as HTMLInputElement;
 const nameInput = document.getElementById('name') as HTMLInputElement;
