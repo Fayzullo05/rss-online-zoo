@@ -1,0 +1,6 @@
+cd online-zoo
+echo "Start format"
+npm run format
+
+echo "Start lint"
+npm run lint

@@ -1,0 +1,180 @@
+:root {
+  /* base */
+  --bg-color: #ffffff;
+  --text-color: #000000;
+
+  /* brand */
+  --primary: #f58021;
+  --accent: #00a092;
+
+  /* sections */
+  --dark-section: #20113d;
+  --header-bg: #f58021;
+
+  /* cards */
+  --card-bg: #ffffff;
+  --card-dark: #20113d;
+
+  /* borders */
+  --border-light: #ffffff;
+  --border-dark: #20113d;
+
+  /* hover */
+  --primary-hover: #d96d10;
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #eaeaea;
+  --dark-section: #0f0a1f;
+  --header-bg: #1e1e1e;
+  --card-bg: #1f1f1f;
+  --card-dark: #2a2a2a;
+  --border-light: #20113d;
+  --border-dark: #444;
+
+  /* form elements */
+  --input-bg: var(--card-dark);
+  --input-border: var(--border-dark);
+  --input-placeholder: #aaa;
+  --input-focus-bg: var(--card-bg);
+
+  /* buttons */
+  --button-secondary-hover: #05786e;
+}
+
+/* skeleton*/
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #e0e0e0;
+}
+
+.skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+[data-theme='dark'] .skeleton {
+  background: #2a2a2a;
+}
+
+[data-theme='dark'] .skeleton::after {
+  background: linear-gradient(90deg, transparent, rgba(247, 247, 247, 0.1), transparent);
+}
+
+/* Dark theme contact page */
+input,
+textarea,
+select {
+  --form-bg: #ffffff;
+  --form-border: #ddd;
+  --form-placeholder: #999;
+  --form-focus-bg: #f9f9f9;
+}
+
+[data-theme='dark'] input,
+[data-theme='dark'] textarea,
+[data-theme='dark'] select {
+  background: var(--input-bg);
+  color: var(--text-color);
+  border: 1px solid var(--input-border);
+  caret-color: var(--accent);
+}
+
+[data-theme='dark'] input::placeholder,
+[data-theme='dark'] textarea::placeholder {
+  color: var(--input-placeholder);
+  opacity: 1;
+}
+
+[data-theme='dark'] input:focus,
+[data-theme='dark'] textarea:focus,
+[data-theme='dark'] select:focus {
+  border-color: var(--accent);
+  background: var(--input-focus-bg);
+  box-shadow: 0 0 0 3px rgba(0, 160, 146, 0.1);
+}
+
+/* Dark theme buttons */
+[data-theme='dark'] button {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+[data-theme='dark'] button:not([style*='background']):hover,
+[data-theme='dark'] button:not([style*='background']):active {
+  background-color: var(--primary-hover);
+  transition: background-color 0.3s ease;
+}
+
+[data-theme='dark'] .contact-button,
+[data-theme='dark'] .donation-button {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+[data-theme='dark'] .contact-button:hover,
+[data-theme='dark'] .contact-button:active,
+[data-theme='dark'] .donation-button:hover,
+[data-theme='dark'] .donation-button:active {
+  background-color: var(--button-secondary-hover);
+  border-color: var(--button-secondary-hover);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+[data-theme='dark'] .footer-button,
+[data-theme='dark'] button[style*='border'] {
+  background-color: transparent;
+  border-color: var(--border-light);
+  color: #ffffff;
+}
+
+[data-theme='dark'] .footer-button:hover,
+[data-theme='dark'] .footer-button:active {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Footer */
+[data-theme='dark'] footer {
+  border-top: 1px solid var(--border-dark);
+}
+
+#themeToggle {
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 30px;
+}
+
+#themeToggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,67 @@
+import { getPets } from './services/pets.service';
+import { renderPets, renderPetsSkeleton } from './components/pets';
+import { Slider } from './components/slider';
+import { getFeedback } from './services/feedback.service';
+import { renderFeedback, renderFeedbackSkeleton } from './components/feedback';
+import { initLazyImages } from './utils/lazy';
+
+async function loadPets(): Promise<void> {
+  const loader = document.getElementById('petsLoader');
+
+  try {
+    if (loader) loader.style.display = 'block';
+
+    renderPetsSkeleton();
+
+    const pets = await getPets();
+
+    renderPets(pets);
+    initLazyImages();
+
+    const prevButton = document.getElementById('leftArrow');
+    const nextButton = document.getElementById('rightArrow');
+    const track = document.querySelector('.pets-grid');
+
+    if (prevButton && nextButton && track instanceof HTMLElement) {
+      new Slider(track, prevButton, nextButton, 1);
+    }
+
+    if (loader) loader.style.display = 'none';
+  } catch (error) {
+    if (loader) {
+      loader.innerText = `Something went wrong. Update the page. Error: ${error instanceof Error ? error.message : 'Unknown error'}`;
+    }
+  }
+}
+
+async function loadFeedback(): Promise<void> {
+  const loader = document.getElementById('feedbackLoader');
+  const track = document.getElementById('feedbackCards');
+
+  try {
+    if (loader) loader.style.display = 'block';
+
+    renderFeedbackSkeleton();
+
+    const feedback = await getFeedback();
+
+    renderFeedback(feedback);
+    initLazyImages();
+
+    const prev = document.getElementById('feedbackLeftArrow');
+    const next = document.getElementById('feedbackRightArrow');
+
+    if (prev && next && track) {
+      new Slider(track, prev, next, 2, 30);
+    }
+
+    if (loader) loader.style.display = 'none';
+  } catch (error) {
+    if (loader) {
+      loader.innerText = `Something went wrong. Update the page. Error: ${error instanceof Error ? error.message : 'Unknown error'}`;
+    }
+  }
+}
+
+loadPets();
+loadFeedback();

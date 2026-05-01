@@ -1,0 +1,768 @@
+
+> lint
+> eslint . --ext .ts
+
+
+D:\projects\rss-online-zoo\online-zoo\dist\assets\animals-CwbPbE4y.js
+   1:260     error  'document' is not defined                                              no-undef
+   1:296     error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+   1:348     error  'document' is not defined                                              no-undef
+   1:377     error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+   1:466     error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  11:49      error  'document' is not defined                                              no-undef
+  11:86      error  'document' is not defined                                              no-undef
+  11:126     error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  11:223     error  'document' is not defined                                              no-undef
+  11:261     error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:692     error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:734     error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:770     error  'setTimeout' is not defined                                            no-undef
+  47:1111    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:1881    error  'window' is not defined                                                no-undef
+  47:1901    error  'window' is not defined                                                no-undef
+  47:1918    error  'window' is not defined                                                no-undef
+  47:2011    error  'window' is not defined                                                no-undef
+  47:2041    error  'window' is not defined                                                no-undef
+  47:2106    error  'window' is not defined                                                no-undef
+  47:2210    error  'window' is not defined                                                no-undef
+  47:2296    error  'window' is not defined                                                no-undef
+  47:2325    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:2336    error  'window' is not defined                                                no-undef
+  47:2654    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:2693    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:2815    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:2863    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:3242    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:3876    error  'L' is not defined                                                     no-undef
+  47:3880    error  'L' is not defined                                                     no-undef
+  47:3930    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:3937    error  'L' is not defined                                                     no-undef
+  47:3953    error  'console' is not defined                                               no-undef
+  47:4463    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:4561    error  'console' is not defined                                               no-undef
+  47:4645    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:4685    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:5003    error  'console' is not defined                                               no-undef
+  47:5106    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:5442    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:5579    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:5599    error  'console' is not defined                                               no-undef
+  47:5655    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:5989    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:6598    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:6795    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:10256   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:11328   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:12358   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:14934   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:14993   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:15528   error  'document' is not defined                                              no-undef
+  47:15685   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:15765   error  'document' is not defined                                              no-undef
+  47:15817   error  'window' is not defined                                                no-undef
+  47:15832   error  'document' is not defined                                              no-undef
+  47:15877   error  'navigator' is not defined                                             no-undef
+  47:15907   error  'document' is not defined                                              no-undef
+  47:16024   error  'navigator' is not defined                                             no-undef
+  47:16097   error  'window' is not defined                                                no-undef
+  47:16110   error  'window' is not defined                                                no-undef
+  47:16237   error  'navigator' is not defined                                             no-undef
+  47:16323   error  'window' is not defined                                                no-undef
+  47:16343   error  'window' is not defined                                                no-undef
+  47:16400   error  'window' is not defined                                                no-undef
+  47:16508   error  'window' is not defined                                                no-undef
+  47:16529   error  'window' is not defined                                                no-undef
+  47:16557   error  'window' is not defined                                                no-undef
+  47:16602   error  'window' is not defined                                                no-undef
+  47:16612   error  'window' is not defined                                                no-undef
+  47:16634   error  'window' is not defined                                                no-undef
+  47:16686   error  'window' is not defined                                                no-undef
+  47:16711   error  'window' is not defined                                                no-undef
+  47:16736   error  'window' is not defined                                                no-undef
+  47:16835   error  Expected to return a value in method 'get'                             getter-return
+  47:16858   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:16858   error  'window' is not defined                                                no-undef
+  47:16913   error  'window' is not defined                                                no-undef
+  47:16976   error  Empty block statement                                                  no-empty
+  47:17014   error  'document' is not defined                                              no-undef
+  47:17068   error  'document' is not defined                                              no-undef
+  47:17146   error  'document' is not defined                                              no-undef
+  47:17311   error  'document' is not defined                                              no-undef
+  47:17486   error  'navigator' is not defined                                             no-undef
+  47:17527   error  'navigator' is not defined                                             no-undef
+  47:17589   error  'navigator' is not defined                                             no-undef
+  47:18449   error  'console' is not defined                                               no-undef
+  47:18523   error  'console' is not defined                                               no-undef
+  47:18653   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:18742   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:18747   error  'document' is not defined                                              no-undef
+  47:18783   error  'document' is not defined                                              no-undef
+  47:18819   error  'document' is not defined                                              no-undef
+  47:18855   error  'document' is not defined                                              no-undef
+  47:19020   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:19064   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:19180   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:19221   error  This assigned value is not used in subsequent statements               no-useless-assignment
+  47:19556   error  'HTMLLabelElement' is not defined                                      no-undef
+  47:19634   error  'HTMLInputElement' is not defined                                      no-undef
+  47:19665   error  'HTMLSelectElement' is not defined                                     no-undef
+  47:19704   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:19825   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:20199   error  'document' is not defined                                              no-undef
+  47:20318   error  'document' is not defined                                              no-undef
+  47:20346   error  'document' is not defined                                              no-undef
+  47:20455   error  'document' is not defined                                              no-undef
+  47:20561   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:20677   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:20748   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:21114   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:21223   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:21438   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:21613   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:21739   error  'document' is not defined                                              no-undef
+  47:21991   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:22152   error  'document' is not defined                                              no-undef
+  47:22161   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:22177   error  'window' is not defined                                                no-undef
+  47:22218   error  'window' is not defined                                                no-undef
+  47:22338   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:22365   error  'document' is not defined                                              no-undef
+  47:22396   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:22434   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:22439   error  'document' is not defined                                              no-undef
+  47:22505   error  'window' is not defined                                                no-undef
+  47:22543   error  'window' is not defined                                                no-undef
+  47:22627   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:22701   error  'window' is not defined                                                no-undef
+  47:22737   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:22789   error  'window' is not defined                                                no-undef
+  47:22889   error  'document' is not defined                                              no-undef
+  47:23711   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:23989   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:24095   error  'window' is not defined                                                no-undef
+  47:24239   error  'window' is not defined                                                no-undef
+  47:24258   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:24555   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:24560   error  'window' is not defined                                                no-undef
+  47:24789   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:25461   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:25696   error  'window' is not defined                                                no-undef
+  47:25726   error  'window' is not defined                                                no-undef
+  47:25752   error  'window' is not defined                                                no-undef
+  47:25780   error  'window' is not defined                                                no-undef
+  47:26508   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:26752   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:26825   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:26945   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:27101   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:27169   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:27588   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:28350   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:28584   error  'clearTimeout' is not defined                                          no-undef
+  47:29260   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:30563   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:30811   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:31454   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:33012   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:33246   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:33491   error  'clearTimeout' is not defined                                          no-undef
+  47:33537   error  'setTimeout' is not defined                                            no-undef
+  47:33863   error  'navigator' is not defined                                             no-undef
+  47:34084   error  'navigator' is not defined                                             no-undef
+  47:34127   error  'navigator' is not defined                                             no-undef
+  47:34210   error  'navigator' is not defined                                             no-undef
+  47:34233   error  'navigator' is not defined                                             no-undef
+  47:34267   error  'navigator' is not defined                                             no-undef
+  47:34544   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:35025   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:35470   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:35536   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:35596   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:36791   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:39509   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:39612   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:39884   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:40080   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:40551   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:40635   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:40838   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:41402   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:41589   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:41657   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:41829   error  'window' is not defined                                                no-undef
+  47:41986   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:42113   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:42221   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:42979   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:43164   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:43285   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:43345   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:43509   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:46196   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:46497   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:46595   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:46875   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:47112   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:47758   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:48084   error  'setTimeout' is not defined                                            no-undef
+  47:48168   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:48802   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:49246   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:49661   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:49823   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:50097   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:50309   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:51167   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:51715   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:51805   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:51962   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:52047   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:52103   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:52459   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:52861   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:52987   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:53242   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:53406   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:53580   error  'document' is not defined                                              no-undef
+  47:53672   error  'document' is not defined                                              no-undef
+  47:53736   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:53749   error  'document' is not defined                                              no-undef
+  47:54023   error  'document' is not defined                                              no-undef
+  47:54083   error  'document' is not defined                                              no-undef
+  47:54114   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:54423   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:54528   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:54605   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:54656   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:54817   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:55108   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:55163   error  Unexpected aliasing of 'this' to local variable                        @typescript-eslint/no-this-alias
+  47:55170   error  'setTimeout' is not defined                                            no-undef
+  47:55192   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:56074   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:56216   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:56640   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:57061   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:57119   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:57649   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:57928   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:58196   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:58380   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:59070   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:59121   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:59245   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:59501   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:60062   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:60104   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:60260   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:60325   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:60418   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:60985   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:61080   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:61180   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:61448   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:61719   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:61847   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:61849   error  'document' is not defined                                              no-undef
+  47:61905   error  'document' is not defined                                              no-undef
+  47:62173   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:62352   error  'document' is not defined                                              no-undef
+  47:62426   error  'window' is not defined                                                no-undef
+  47:62481   error  'window' is not defined                                                no-undef
+  47:62771   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:62862   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:62919   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:62921   error  'document' is not defined                                              no-undef
+  47:63041   error  'document' is not defined                                              no-undef
+  47:63093   error  'document' is not defined                                              no-undef
+  47:63192   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:63480   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:63736   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:63743   error  'console' is not defined                                               no-undef
+  47:63938   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:64087   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:64156   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:64313   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:64683   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:64740   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:64826   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:64865   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:64968   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:65150   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:65868   error  'console' is not defined                                               no-undef
+  47:66047   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:66054   error  'console' is not defined                                               no-undef
+  47:66249   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:66507   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:67479   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:68090   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:68888   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:68952   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:69739   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:69893   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:70122   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:70212   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:70631   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:71253   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:73110   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:73220   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:73426   error  'document' is not defined                                              no-undef
+  47:74211   error  'document' is not defined                                              no-undef
+  47:74281   error  'document' is not defined                                              no-undef
+  47:74347   error  'document' is not defined                                              no-undef
+  47:74551   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:74787   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:75539   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:75755   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:75920   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:76118   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:76235   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:76638   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:76685   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:76867   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:77916   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:78306   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:78572   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:78836   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:78905   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:79055   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:79394   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:79661   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:80562   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:81191   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:81410   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:81907   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:82169   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:83371   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:83610   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:83852   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:84182   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:84216   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:84611   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:84821   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:84938   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:85151   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:85357   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:85770   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:86016   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:86909   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:87382   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:87698   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:87912   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:88041   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:88614   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:88940   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:89308   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:89425   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:89685   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:90282   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:91137   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:91484   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:91542   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:91800   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:93159   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:93533   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:93680   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:93880   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:94538   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:94879   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:95027   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:95348   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:95828   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:95937   error  'clearTimeout' is not defined                                          no-undef
+  47:96221   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:96279   error  'setTimeout' is not defined                                            no-undef
+  47:96782   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:98152   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:98312   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:98421   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:99162   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:99371   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:100260  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:100428  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:100514  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:100567  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:100757  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:101522  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:101886  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:103189  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:103271  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:103400  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:103581  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:103811  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:104249  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:104697  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:105188  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:105544  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:106244  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:107216  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:107430  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:107457  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:107637  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:107862  error  Unexpected aliasing of 'this' to local variable                        @typescript-eslint/no-this-alias
+  47:107905  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:107951  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:108100  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:108456  error  'document' is not defined                                              no-undef
+  47:108522  error  'Element' is not defined                                               no-undef
+  47:109098  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:109236  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:109894  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:110338  error  'document' is not defined                                              no-undef
+  47:110481  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:110709  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:110768  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:111062  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:111132  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:111282  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:111594  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:112386  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:112500  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:112600  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:112701  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:112876  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:112952  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:113449  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:113476  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:113920  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:114116  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:114576  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:114763  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:115126  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:115958  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:116272  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:116379  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:116440  error  'document' is not defined                                              no-undef
+  47:117422  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:117593  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:117875  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:118094  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:118177  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:118545  error  'setTimeout' is not defined                                            no-undef
+  47:119270  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:119867  error  'document' is not defined                                              no-undef
+  47:120447  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:120549  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:120557  error  'setTimeout' is not defined                                            no-undef
+  47:120660  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:121210  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:121823  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:121922  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:121987  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:122121  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:122645  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:122726  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:122792  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:122997  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:123626  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:123698  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:124098  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:124441  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:124533  error  'document' is not defined                                              no-undef
+  47:124566  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:124807  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:125020  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:125230  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:125427  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:125559  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:125660  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:125868  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:126015  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:126117  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:126451  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:126633  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:126812  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:127091  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:127320  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:127453  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:127525  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:127720  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:127762  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:127971  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:128135  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:128549  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:128936  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:129174  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:129234  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:129477  error  'setTimeout' is not defined                                            no-undef
+  47:129705  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:129931  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:130143  error  'document' is not defined                                              no-undef
+  47:130226  error  'document' is not defined                                              no-undef
+  47:130284  error  Empty block statement                                                  no-empty
+  47:130312  error  'document' is not defined                                              no-undef
+  47:130501  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:130635  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:130833  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:130957  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:131096  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:131969  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:132148  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:132402  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:132663  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:132823  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:132956  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:133053  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:133130  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:134175  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:135065  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:135308  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:135652  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:135708  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:135786  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:135816  error  'clearTimeout' is not defined                                          no-undef
+  47:135958  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:136078  error  'document' is not defined                                              no-undef
+  47:136212  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:136474  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:136576  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:136655  error  'document' is not defined                                              no-undef
+  47:136852  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:136908  error  'setTimeout' is not defined                                            no-undef
+  47:137142  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:137229  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:137585  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:137674  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:137939  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:138293  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:138434  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:138834  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:139117  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:139357  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:139546  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:139689  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:140009  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:140460  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:140982  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:141138  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:141370  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:141516  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:141715  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:141948  error  'document' is not defined                                              no-undef
+  47:141964  error  'document' is not defined                                              no-undef
+  47:142045  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:142074  error  'window' is not defined                                                no-undef
+  47:142117  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:142178  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:142695  error  'document' is not defined                                              no-undef
+  47:142763  error  'document' is not defined                                              no-undef
+  47:143382  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:143543  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:143773  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:143940  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:143940  error  'clearTimeout' is not defined                                          no-undef
+  47:143978  error  'setTimeout' is not defined                                            no-undef
+  47:144297  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:144764  error  'clearTimeout' is not defined                                          no-undef
+  47:144837  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:144910  error  'setTimeout' is not defined                                            no-undef
+  47:144934  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:144972  error  'document' is not defined                                              no-undef
+  47:144997  error  'document' is not defined                                              no-undef
+  47:145106  error  'document' is not defined                                              no-undef
+  47:145171  error  'document' is not defined                                              no-undef
+  47:145246  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:145248  error  'document' is not defined                                              no-undef
+  47:145273  error  'document' is not defined                                              no-undef
+  47:145328  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:145328  error  'clearTimeout' is not defined                                          no-undef
+  47:145362  error  'document' is not defined                                              no-undef
+  47:145427  error  'document' is not defined                                              no-undef
+  47:145690  error  'MouseEvent' is not defined                                            no-undef
+  47:145734  error  'window' is not defined                                                no-undef
+  47:145815  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:145860  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:145997  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:146127  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:146443  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:146757  error  'document' is not defined                                              no-undef
+  47:146804  error  'document' is not defined                                              no-undef
+  47:147540  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:147681  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:147799  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:147839  error  'document' is not defined                                              no-undef
+  47:147886  error  'document' is not defined                                              no-undef
+  47:148144  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:149346  error  'window' is not defined                                                no-undef
+  47:149355  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:149386  error  'window' is not defined                                                no-undef
+  47:149404  error  'window' is not defined                                                no-undef
+  47:149496  error  'document' is not defined                                              no-undef
+  47:149534  error  'document' is not defined                                              no-undef
+  47:149565  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:149859  error  'document' is not defined                                              no-undef
+  47:149897  error  'document' is not defined                                              no-undef
+  47:149933  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:150030  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:150071  error  'document' is not defined                                              no-undef
+  47:150111  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:150185  error  'document' is not defined                                              no-undef
+  47:150226  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:150288  error  'document' is not defined                                              no-undef
+  47:150337  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:150462  error  'document' is not defined                                              no-undef
+  47:150616  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:150670  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:150742  error  'document' is not defined                                              no-undef
+  47:150786  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:150834  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  47:150874  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+
+D:\projects\rss-online-zoo\online-zoo\dist\assets\api-BXkv1FmF.js
+  1:21   error  'document' is not defined                                              no-undef
+  1:128  error  'document' is not defined                                              no-undef
+  1:192  error  'MutationObserver' is not defined                                      no-undef
+  1:282  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:342  error  'document' is not defined                                              no-undef
+  1:690  error  'fetch' is not defined                                                 no-undef
+  1:820  error  'fetch' is not defined                                                 no-undef
+
+D:\projects\rss-online-zoo\online-zoo\dist\assets\landing-BQFh7Xm7.js
+   1:394   error  'document' is not defined                                              no-undef
+   1:430   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+   1:513   error  'document' is not defined                                              no-undef
+   1:543   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  15:123   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  15:222   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  15:450   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  15:549   error  'setTimeout' is not defined                                            no-undef
+  15:639   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  15:668   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  15:957   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  15:1016  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  15:1100  error  'requestAnimationFrame' is not defined                                 no-undef
+  15:1127  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  15:1222  error  'setTimeout' is not defined                                            no-undef
+  15:1340  error  'document' is not defined                                              no-undef
+  15:1381  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  15:1422  error  'document' is not defined                                              no-undef
+  15:1452  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  20:54    error  'document' is not defined                                              no-undef
+  20:96    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  20:156   error  'document' is not defined                                              no-undef
+  20:195   error  'document' is not defined                                              no-undef
+  20:235   error  'document' is not defined                                              no-undef
+  20:272   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  20:291   error  'HTMLElement' is not defined                                           no-undef
+  20:353   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  20:438   error  'document' is not defined                                              no-undef
+  20:482   error  'document' is not defined                                              no-undef
+  20:527   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  20:587   error  'document' is not defined                                              no-undef
+  20:634   error  'document' is not defined                                              no-undef
+  20:680   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  20:741   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+
+D:\projects\rss-online-zoo\online-zoo\dist\assets\login-D9hJ5dBa.js
+  1:82    error  'document' is not defined                                              no-undef
+  1:117   error  'document' is not defined                                              no-undef
+  1:155   error  'document' is not defined                                              no-undef
+  1:197   error  'document' is not defined                                              no-undef
+  1:237   error  'document' is not defined                                              no-undef
+  1:282   error  'document' is not defined                                              no-undef
+  1:359   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:482   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:615   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:705   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:1111  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:1111  error  'localStorage' is not defined                                          no-undef
+  1:1158  error  'localStorage' is not defined                                          no-undef
+  1:1190  error  'window' is not defined                                                no-undef
+  1:1250  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+
+D:\projects\rss-online-zoo\online-zoo\dist\assets\main-CjVEdbia.js
+   1:164   error  'localStorage' is not defined                                          no-undef
+   1:234   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+   1:234   error  'localStorage' is not defined                                          no-undef
+   1:266   error  'localStorage' is not defined                                          no-undef
+   1:326   error  'document' is not defined                                              no-undef
+   1:366   error  'document' is not defined                                              no-undef
+   1:404   error  'document' is not defined                                              no-undef
+   1:440   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+   1:510   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+   8:9     error  'document' is not defined                                              no-undef
+   8:80    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+   8:84    error  'location' is not defined                                              no-undef
+  11:153   error  'document' is not defined                                              no-undef
+  11:196   error  'document' is not defined                                              no-undef
+  11:239   error  'document' is not defined                                              no-undef
+  11:280   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  11:426   error  'document' is not defined                                              no-undef
+  11:463   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  11:508   error  'document' is not defined                                              no-undef
+  11:556   error  'document' is not defined                                              no-undef
+  11:597   error  'document' is not defined                                              no-undef
+  11:634   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  11:680   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  11:832   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  11:966   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  11:988   error  'document' is not defined                                              no-undef
+  11:1056  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  11:1088  error  'document' is not defined                                              no-undef
+  50:13    error  'document' is not defined                                              no-undef
+  50:50    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  50:63    error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  50:88    error  'document' is not defined                                              no-undef
+  50:121   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  50:203   error  'document' is not defined                                              no-undef
+  50:269   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  97:30    error  'document' is not defined                                              no-undef
+  97:69    error  'document' is not defined                                              no-undef
+  97:109   error  'document' is not defined                                              no-undef
+  97:190   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  97:220   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  97:220   error  'document' is not defined                                              no-undef
+  97:419   error  'document' is not defined                                              no-undef
+  97:466   error  'document' is not defined                                              no-undef
+  97:509   error  'document' is not defined                                              no-undef
+  97:554   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  97:599   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  97:690   error  'document' is not defined                                              no-undef
+  97:730   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+
+D:\projects\rss-online-zoo\online-zoo\dist\assets\register-BnWXt6Qc.js
+  1:82    error  'document' is not defined                                              no-undef
+  1:117   error  'document' is not defined                                              no-undef
+  1:151   error  'document' is not defined                                              no-undef
+  1:186   error  'document' is not defined                                              no-undef
+  1:224   error  'document' is not defined                                              no-undef
+  1:269   error  'document' is not defined                                              no-undef
+  1:313   error  'document' is not defined                                              no-undef
+  1:356   error  'document' is not defined                                              no-undef
+  1:401   error  'document' is not defined                                              no-undef
+  1:445   error  'document' is not defined                                              no-undef
+  1:493   error  'document' is not defined                                              no-undef
+  1:569   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:717   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:848   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:980   error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:1096  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:1186  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:1276  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:1366  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:1941  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+  1:2010  error  'window' is not defined                                                no-undef
+  1:2059  error  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+
+D:\projects\rss-online-zoo\online-zoo\pages\animal\script.js
+  1:17  error  'document' is not defined  no-undef
+  2:19  error  'document' is not defined  no-undef
+
+D:\projects\rss-online-zoo\online-zoo\pages\popups\popupsimple.js
+   1:15  error  'document' is not defined  no-undef
+   2:17  error  'document' is not defined  no-undef
+   3:21  error  'document' is not defined  no-undef
+   4:20  error  'document' is not defined  no-undef
+   9:3   error  'document' is not defined  no-undef
+  15:3   error  'document' is not defined  no-undef
+
+D:\projects\rss-online-zoo\online-zoo\scripts\components\donationModal.ts
+  6:5  error  'donorName' is assigned a value but never used   @typescript-eslint/no-unused-vars
+  7:5  error  'donorEmail' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\projects\rss-online-zoo\online-zoo\scripts\landing.ts
+  26:12  error  'error' is defined but never used  @typescript-eslint/no-unused-vars
+  52:12  error  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 741 problems (741 errors, 0 warnings)
+
